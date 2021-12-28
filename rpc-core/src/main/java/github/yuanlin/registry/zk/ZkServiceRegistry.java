@@ -1,6 +1,7 @@
 package github.yuanlin.registry.zk;
 
 import github.yuanlin.registry.ServiceRegistry;
+import org.apache.curator.framework.CuratorFramework;
 
 import java.net.InetSocketAddress;
 
@@ -13,6 +14,8 @@ import java.net.InetSocketAddress;
 public class ZkServiceRegistry implements ServiceRegistry {
     @Override
     public void registerService(String serviceName, InetSocketAddress serviceAddress) {
-
+        String servicePath = CuratorUtils.ZK_REGISTERED_ROOT_PATH + "/" + serviceName + serviceAddress.toString();
+        CuratorFramework zkClient = CuratorUtils.getZkClient();
+        CuratorUtils.createPersistentNode(zkClient, servicePath);
     }
 }
