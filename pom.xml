@@ -31,9 +31,6 @@
         <module>demo-server</module>
         <module>demo-client</module>
         <module>demo-api</module>
-        <module>demo-server</module>
-        <module>demo-client</module>
-        <module>demo-api</module>
     </modules>
     <dependencies>
         <!-- lombok -->
