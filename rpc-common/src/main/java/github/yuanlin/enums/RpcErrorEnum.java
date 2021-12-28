@@ -13,7 +13,8 @@ import lombok.Getter;
 @Getter
 public enum RpcErrorEnum {
 
-    SERVICE_CAN_NOT_BE_FOUND("没有找到指定的服务");
+    SERVICE_CAN_NOT_BE_FOUND("没有找到指定的服务"),
+    FAILED_TO_CONNECT_TO_REGISTRY("连接注册中心失败");
 
     private final String message;
 }

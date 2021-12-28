@@ -159,7 +159,7 @@ public class CuratorUtils {
             if (!zkClient.blockUntilConnected(30, TimeUnit.SECONDS)) {
                 throw new RuntimeException("Time out when connect to ZK!");
             }
-        } catch (Exception e) {}
+        } catch (InterruptedException e) {}
         log.debug("connect to zookeeper: {}", zookeeperAddress);
         return zkClient;
     }

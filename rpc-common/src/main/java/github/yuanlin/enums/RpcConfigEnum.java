@@ -15,7 +15,8 @@ public enum RpcConfigEnum {
 
     RPC_CONFIG_PATH("rpc.properties"),
     ZK_ADDRESS("rpc.zookeeper.address"),
-    ZK_REGISTERED_ROOT_PATH("/registered");
+    ZK_REGISTERED_ROOT_PATH("/registered"),
+    NACOS_ADDRESS("rpc.nacos.address");
 
     private final String value;
 }
