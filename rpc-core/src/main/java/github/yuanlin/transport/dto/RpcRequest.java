@@ -16,12 +16,12 @@ import lombok.*;
 @AllArgsConstructor
 public class RpcRequest {
     private String requestId;
-    private String interfaceName;
+    private String interfaceName = "";
     private String methodName;
     private Class<?>[] parameterTypes;
     private Object[] parameters;
-    private String version;
-    private String group;
+    private String version = "";
+    private String group = "";
 
     public String getServiceName() {
         return this.interfaceName + this.group + this.version;

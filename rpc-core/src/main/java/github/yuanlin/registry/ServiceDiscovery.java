@@ -1,5 +1,6 @@
 package github.yuanlin.registry;
 
+import com.alibaba.nacos.api.exception.NacosException;
 import github.yuanlin.transport.dto.RpcRequest;
 
 import java.net.InetSocketAddress;

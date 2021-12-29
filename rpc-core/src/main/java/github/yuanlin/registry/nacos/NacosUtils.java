@@ -12,10 +12,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
 import java.net.InetSocketAddress;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Properties;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 操作 Nacos 的工具类
@@ -73,8 +70,13 @@ public class NacosUtils {
      * @return 服务实例集合
      * @throws NacosException
      */
-    public static List<Instance> getAllInstance(String serviceName) throws NacosException {
-        return namingService.getAllInstances(serviceName);
+    public static List<String> getAllInstance(String serviceName) throws NacosException {
+        List<Instance> allInstances = namingService.getAllInstances(serviceName);
+        List<String> instancesStringValue = new ArrayList<>();
+        for (Instance instance : allInstances) {
+            instancesStringValue.add(instance.getIp() + ":" + instance.getPort());
+        }
+        return instancesStringValue;
     }
 
     /**
