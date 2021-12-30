@@ -10,6 +10,8 @@ import github.yuanlin.transport.RpcServer;
  */
 public class NettyRpcServer implements RpcServer {
 
+    public static final int PORT = 8002;
+
     @Override
     public void start() {
 

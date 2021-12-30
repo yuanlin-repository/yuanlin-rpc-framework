@@ -1,6 +1,16 @@
 package github.yuanlin.provider.impl;
 
+import github.yuanlin.enums.ErrorEnum;
+import github.yuanlin.exception.RpcException;
+import github.yuanlin.extension.ExtensionLoader;
 import github.yuanlin.provider.ServiceProvider;
+import github.yuanlin.registry.ServiceRegistry;
+import github.yuanlin.transport.netty.server.NettyRpcServer;
+import lombok.extern.slf4j.Slf4j;
+
+import java.net.InetSocketAddress;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * ServiceProvider 接口实现
@@ -8,15 +18,37 @@ import github.yuanlin.provider.ServiceProvider;
  * @author yuanlin
  * @date 2021/12/28/13:23
  */
+@Slf4j
 public class ServiceProviderImpl implements ServiceProvider {
+
+    /**
+     * key : value => serviceName : serviceBean
+     */
+    private final Map<String, Object> registeredService = new ConcurrentHashMap<>();
+    /**
+     * 注册中心
+     */
+    private final ServiceRegistry serviceRegistry = ExtensionLoader.getExtensionLoader(ServiceRegistry.class).getExtension("zk");
+
+    public ServiceProviderImpl() {}
 
     @Override
     public <T> void addService(String serviceName, T service) {
-
+        if (registeredService.containsKey(serviceName)) {
+            return;
+        }
+        String host = "127.0.0.1";
+        serviceRegistry.registerService(serviceName, new InetSocketAddress(host, NettyRpcServer.PORT));
+        registeredService.put(serviceName, service);
+        log.info("add service {} => {}", serviceName, host + ":" + NettyRpcServer.PORT);
     }
 
     @Override
     public Object getService(String serviceName) {
-        return null;
+        Object serviceBean = registeredService.get(serviceName);
+        if (null == serviceBean) {
+            throw new RpcException(ErrorEnum.SERVICE_CAN_NOT_BE_FOUND);
+        }
+        return serviceBean;
     }
 }
