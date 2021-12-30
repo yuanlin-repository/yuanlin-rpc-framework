@@ -2,6 +2,8 @@ package github.yuanlin.transport.dto;
 
 import lombok.*;
 
+import java.io.Serializable;
+
 /**
  * RPC 请求
  *
@@ -14,7 +16,7 @@ import lombok.*;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class RpcRequest {
+public class RpcRequest implements Serializable {
     private String requestId;
     private String interfaceName = "";
     private String methodName;

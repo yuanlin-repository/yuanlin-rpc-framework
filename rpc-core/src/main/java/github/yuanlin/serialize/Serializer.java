@@ -14,7 +14,7 @@ public interface Serializer {
      * @param obj 要序列化的对象
      * @return 字节数组
      */
-    byte[] serialize(Object obj);
+    <T> byte[] serialize(T obj);
 
     /**
      * 反序列化方法

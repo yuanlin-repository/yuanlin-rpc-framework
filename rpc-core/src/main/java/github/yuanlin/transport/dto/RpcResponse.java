@@ -3,6 +3,8 @@ package github.yuanlin.transport.dto;
 import github.yuanlin.enums.ResponseCodeEnum;
 import lombok.*;
 
+import java.io.Serializable;
+
 /**
  * RPC 响应
  *
@@ -11,10 +13,11 @@ import lombok.*;
  */
 @Getter
 @Setter
+@Builder
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
-public class RpcResponse<T> {
+public class RpcResponse<T> implements Serializable {
 
     private String requestId;
 
