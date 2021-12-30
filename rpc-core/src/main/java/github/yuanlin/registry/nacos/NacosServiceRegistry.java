@@ -4,6 +4,7 @@ import com.alibaba.nacos.api.exception.NacosException;
 import github.yuanlin.enums.ErrorEnum;
 import github.yuanlin.exception.RpcException;
 import github.yuanlin.registry.ServiceRegistry;
+import github.yuanlin.registry.utils.NacosUtils;
 import lombok.extern.slf4j.Slf4j;
 
 import java.net.InetSocketAddress;

@@ -1,4 +1,4 @@
-package github.yuanlin.registry.zk;
+package github.yuanlin.registry.utils;
 
 import github.yuanlin.enums.ConfigEnum;
 import github.yuanlin.utils.PropertiesUtils;

@@ -1,4 +1,4 @@
-package github.yuanlin.registry.nacos;
+package github.yuanlin.registry.utils;
 
 import com.alibaba.nacos.api.exception.NacosException;
 import com.alibaba.nacos.api.naming.NamingFactory;

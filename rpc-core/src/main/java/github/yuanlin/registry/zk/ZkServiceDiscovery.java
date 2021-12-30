@@ -3,6 +3,7 @@ package github.yuanlin.registry.zk;
 import github.yuanlin.enums.ErrorEnum;
 import github.yuanlin.exception.RpcException;
 import github.yuanlin.registry.ServiceDiscovery;
+import github.yuanlin.registry.utils.CuratorUtils;
 import github.yuanlin.transport.dto.RpcRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections4.CollectionUtils;

@@ -5,7 +5,6 @@ import github.yuanlin.exception.RpcException;
 import github.yuanlin.extension.ExtensionLoader;
 import github.yuanlin.provider.ServiceProvider;
 import github.yuanlin.registry.ServiceRegistry;
-import github.yuanlin.transport.netty.server.NettyRpcServer;
 import lombok.extern.slf4j.Slf4j;
 
 import java.net.InetSocketAddress;
@@ -33,14 +32,14 @@ public class ServiceProviderImpl implements ServiceProvider {
     public ServiceProviderImpl() {}
 
     @Override
-    public <T> void addService(String serviceName, T service) {
+    public <T> void addService(String serviceName, T service, InetSocketAddress serviceAddress) {
         if (registeredService.containsKey(serviceName)) {
             return;
         }
         String host = "127.0.0.1";
-        serviceRegistry.registerService(serviceName, new InetSocketAddress(host, NettyRpcServer.PORT));
+        serviceRegistry.registerService(serviceName, serviceAddress);
         registeredService.put(serviceName, service);
-        log.info("add service {} => {}", serviceName, host + ":" + NettyRpcServer.PORT);
+        log.info("publish service {} => {}", serviceName, serviceAddress);
     }
 
     @Override

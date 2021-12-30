@@ -1,6 +1,7 @@
 package github.yuanlin.registry.zk;
 
 import github.yuanlin.registry.ServiceRegistry;
+import github.yuanlin.registry.utils.CuratorUtils;
 import org.apache.curator.framework.CuratorFramework;
 
 import java.net.InetSocketAddress;

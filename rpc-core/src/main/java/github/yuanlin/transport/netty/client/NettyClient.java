@@ -9,7 +9,7 @@ import github.yuanlin.transport.dto.RpcRequest;
  * @author yuanlin
  * @date 2021/12/28/12:44
  */
-public class NettyRpcClient implements RpcClient {
+public class NettyClient implements RpcClient {
     @Override
     public Object sendRequest(RpcRequest rpcRequest) {
         return null;

@@ -8,4 +8,6 @@ package github.yuanlin.transport.constants;
  */
 public class RpcConstants {
 
+    public static final int MAX_FRAME_LENGTH = 8 * 1024 * 1024;
+
 }
