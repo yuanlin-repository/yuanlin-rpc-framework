@@ -1,7 +1,7 @@
 package github.yuanlin.registry.nacos;
 
 import com.alibaba.nacos.api.exception.NacosException;
-import github.yuanlin.enums.RpcErrorEnum;
+import github.yuanlin.enums.ErrorEnum;
 import github.yuanlin.exception.RpcException;
 import github.yuanlin.registry.ServiceRegistry;
 import lombok.extern.slf4j.Slf4j;
@@ -22,7 +22,7 @@ public class NacosServiceRegistry implements ServiceRegistry {
             NacosUtils.registerService(serviceName, serviceAddress);
         } catch (NacosException e) {
             log.error("register service [{}] fail", serviceName, e);
-            throw new RpcException(RpcErrorEnum.RIGISTER_SERVICE_FAILED);
+            throw new RpcException(ErrorEnum.RIGISTER_SERVICE_FAILED);
         }
     }
 }

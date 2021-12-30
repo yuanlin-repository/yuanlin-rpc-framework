@@ -1,9 +1,7 @@
 package github.yuanlin.registry.zk;
 
-import github.yuanlin.enums.RpcErrorEnum;
+import github.yuanlin.enums.ErrorEnum;
 import github.yuanlin.exception.RpcException;
-import github.yuanlin.extension.ExtensionLoader;
-import github.yuanlin.loadbalance.LoadBalancer;
 import github.yuanlin.registry.ServiceDiscovery;
 import github.yuanlin.transport.dto.RpcRequest;
 import lombok.extern.slf4j.Slf4j;
@@ -34,7 +32,7 @@ public class ZkServiceDiscovery implements ServiceDiscovery {
         CuratorFramework zkClient = CuratorUtils.getZkClient();
         List<String> serviceAddresses = CuratorUtils.getChildrenNodes(zkClient, serviceName);
         if (CollectionUtils.isEmpty(serviceAddresses)) {
-            throw new RpcException(RpcErrorEnum.SERVICE_CAN_NOT_BE_FOUND, serviceName);
+            throw new RpcException(ErrorEnum.SERVICE_CAN_NOT_BE_FOUND, serviceName);
         }
 //        String targetServiceAddress = loadBalancer.selectServiceAddress(serviceAddresses, rpcRequest);
 //        log.info("find service [{}] address successfully", targetServiceAddress);

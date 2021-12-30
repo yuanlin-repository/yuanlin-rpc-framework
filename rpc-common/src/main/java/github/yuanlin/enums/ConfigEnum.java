@@ -11,7 +11,7 @@ import lombok.Getter;
  */
 @Getter
 @AllArgsConstructor
-public enum RpcConfigEnum {
+public enum ConfigEnum {
 
     RPC_CONFIG_PATH("rpc.properties"),
     ZK_ADDRESS("rpc.zookeeper.address"),

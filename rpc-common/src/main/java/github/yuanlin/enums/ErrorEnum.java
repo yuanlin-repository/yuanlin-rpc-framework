@@ -11,7 +11,7 @@ import lombok.Getter;
  */
 @AllArgsConstructor
 @Getter
-public enum RpcErrorEnum {
+public enum ErrorEnum {
 
     SERVICE_CAN_NOT_BE_FOUND("没有找到指定的服务"),
     FAILED_TO_CONNECT_TO_REGISTRY("连接注册中心失败"),

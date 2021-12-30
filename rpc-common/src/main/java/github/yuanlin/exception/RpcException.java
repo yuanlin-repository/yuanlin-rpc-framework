@@ -1,6 +1,6 @@
 package github.yuanlin.exception;
 
-import github.yuanlin.enums.RpcErrorEnum;
+import github.yuanlin.enums.ErrorEnum;
 
 /**
  * RPC 运行时异常
@@ -10,11 +10,11 @@ import github.yuanlin.enums.RpcErrorEnum;
  */
 public class RpcException extends RuntimeException {
 
-    public RpcException(RpcErrorEnum errorMessageEnum) {
+    public RpcException(ErrorEnum errorMessageEnum) {
         super(errorMessageEnum.getMessage());
     }
 
-    public RpcException(RpcErrorEnum errorMessageEnum, String detail) {
+    public RpcException(ErrorEnum errorMessageEnum, String detail) {
         super(errorMessageEnum.getMessage() + ":" + detail);
     }
 

@@ -4,8 +4,8 @@ import com.alibaba.nacos.api.exception.NacosException;
 import com.alibaba.nacos.api.naming.NamingFactory;
 import com.alibaba.nacos.api.naming.NamingService;
 import com.alibaba.nacos.api.naming.pojo.Instance;
-import github.yuanlin.enums.RpcConfigEnum;
-import github.yuanlin.enums.RpcErrorEnum;
+import github.yuanlin.enums.ConfigEnum;
+import github.yuanlin.enums.ErrorEnum;
 import github.yuanlin.exception.RpcException;
 import github.yuanlin.utils.PropertiesUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -35,9 +35,9 @@ public class NacosUtils {
 
     static {
         namingService = getNacosNamingService();
-        Properties properties = PropertiesUtils.readPropertiesFile(RpcConfigEnum.RPC_CONFIG_PATH.getValue());
+        Properties properties = PropertiesUtils.readPropertiesFile(ConfigEnum.RPC_CONFIG_PATH.getValue());
         if (properties != null) {
-            String defaultNacosAddress = properties.getProperty(RpcConfigEnum.NACOS_ADDRESS.getValue());
+            String defaultNacosAddress = properties.getProperty(ConfigEnum.NACOS_ADDRESS.getValue());
             if (StringUtils.isNotEmpty(defaultNacosAddress)) {
                 DEFAULT_NACOS_ADDRESS = defaultNacosAddress;
             }
@@ -49,7 +49,7 @@ public class NacosUtils {
             return NamingFactory.createNamingService(DEFAULT_NACOS_ADDRESS);
         } catch (NacosException e) {
             log.error("connect to nacos [{}] fail", DEFAULT_NACOS_ADDRESS);
-            throw new RpcException(RpcErrorEnum.FAILED_TO_CONNECT_TO_REGISTRY);
+            throw new RpcException(ErrorEnum.FAILED_TO_CONNECT_TO_REGISTRY);
         }
     }
 

@@ -1,7 +1,6 @@
 package github.yuanlin.registry.zk;
 
-import github.yuanlin.enums.RpcConfigEnum;
-import github.yuanlin.transport.constants.RpcConstants;
+import github.yuanlin.enums.ConfigEnum;
 import github.yuanlin.utils.PropertiesUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
@@ -62,13 +61,13 @@ public class CuratorUtils {
     private static CuratorFramework zkClient;
 
     static {
-        Properties properties = PropertiesUtils.readPropertiesFile(RpcConfigEnum.RPC_CONFIG_PATH.getValue());
+        Properties properties = PropertiesUtils.readPropertiesFile(ConfigEnum.RPC_CONFIG_PATH.getValue());
         if (properties != null) {
-            String zookeeperRegisteredRootPath = properties.getProperty(RpcConfigEnum.ZK_REGISTERED_ROOT_PATH.getValue());
+            String zookeeperRegisteredRootPath = properties.getProperty(ConfigEnum.ZK_REGISTERED_ROOT_PATH.getValue());
             if (StringUtils.isNotEmpty(zookeeperRegisteredRootPath)) {
                 ZK_REGISTERED_ROOT_PATH = zookeeperRegisteredRootPath;
             }
-            String defaultZooKeeperAddress = properties.getProperty(RpcConfigEnum.ZK_ADDRESS.getValue());
+            String defaultZooKeeperAddress = properties.getProperty(ConfigEnum.ZK_ADDRESS.getValue());
             if (StringUtils.isNotEmpty(defaultZooKeeperAddress)) {
                 DEFAULT_ZOOKEEPER_ADDRESS = defaultZooKeeperAddress;
             }
@@ -135,10 +134,10 @@ public class CuratorUtils {
      */
     public static CuratorFramework getZkClient() {
         // 检查用户是否配置了 ZooKeeper 地址
-//        Properties properties = PropertiesUtils.readPropertiesFile(RpcConfigEnum.RPC_CONFIG_PATH.getValue());
+//        Properties properties = PropertiesUtils.readPropertiesFile(ConfigEnum.RPC_CONFIG_PATH.getValue());
 //        String zookeeperAddress = "";
-//        if (properties != null && StringUtils.isNotEmpty(properties.getProperty(RpcConfigEnum.ZK_ADDRESS.getValue()))) {
-//            zookeeperAddress = properties.getProperty(RpcConfigEnum.ZK_ADDRESS.getValue());
+//        if (properties != null && StringUtils.isNotEmpty(properties.getProperty(ConfigEnum.ZK_ADDRESS.getValue()))) {
+//            zookeeperAddress = properties.getProperty(ConfigEnum.ZK_ADDRESS.getValue());
 //        } else {
 //            zookeeperAddress = DEFAULT_ZOOKEEPER_ADDRESS;
 //        }

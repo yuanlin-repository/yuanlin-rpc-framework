@@ -1,11 +1,8 @@
 package github.yuanlin.registry.nacos;
 
 import com.alibaba.nacos.api.exception.NacosException;
-import com.alibaba.nacos.api.naming.pojo.Instance;
-import github.yuanlin.enums.RpcErrorEnum;
+import github.yuanlin.enums.ErrorEnum;
 import github.yuanlin.exception.RpcException;
-import github.yuanlin.extension.ExtensionLoader;
-import github.yuanlin.loadbalance.LoadBalancer;
 import github.yuanlin.registry.ServiceDiscovery;
 import github.yuanlin.transport.dto.RpcRequest;
 import lombok.extern.slf4j.Slf4j;
@@ -37,7 +34,7 @@ public class NacosServiceDiscovery implements ServiceDiscovery {
             List<String> serviceAddresses = NacosUtils.getAllInstance(serviceName);
             if (CollectionUtils.isEmpty(serviceAddresses)) {
                 log.error("can't find service: [{}]", serviceName);
-                throw new RpcException(RpcErrorEnum.SERVICE_CAN_NOT_BE_FOUND);
+                throw new RpcException(ErrorEnum.SERVICE_CAN_NOT_BE_FOUND);
             } else {
 //            String targetServiceAddress = loadBalancer.selectServiceAddress(instanceList, rpcRequest);
 //            String[] hostAndPort = targetServiceAddress.split(":");
