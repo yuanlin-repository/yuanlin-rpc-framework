@@ -58,13 +58,17 @@ public class NettyServer extends AbstractRpcServer implements BeanPostProcessor 
                             ChannelPipeline pipeline = channel.pipeline();
                             // 开启 Netty 心跳机制
                             pipeline.addLast(new IdleStateHandler(30, 0, 0, TimeUnit.SECONDS));
+                            // 编码器
                             pipeline.addLast(new NettyMessageEncoder());
+                            // 解码器
                             pipeline.addLast(new NettyMessageDecoder());
+                            // RPC 请求处理器（用于接受 RPC 请求并返回响应）
                             pipeline.addLast(new NettyServerHandler());
                         }
                     });
             ChannelFuture f = bootstrap.bind(host, port).sync();
             log.debug("netty server started on port {}", port);
+            // 注册标注了 @RpcService 的服务
             registerService();
             f.channel().closeFuture().sync();
         } catch (InterruptedException e) {
@@ -89,6 +93,9 @@ public class NettyServer extends AbstractRpcServer implements BeanPostProcessor 
         }
     }
 
+    /**
+     * 扫描标注了 @RpcService 的服务
+     */
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         RpcService rpcServiceAno = bean.getClass().getAnnotation(RpcService.class);

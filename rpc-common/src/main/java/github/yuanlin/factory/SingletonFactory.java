@@ -32,4 +32,22 @@ public class SingletonFactory {
             }));
         }
     }
+
+    public static <T> T getInstance(Class<T> cls, Object ... args) {
+        if (cls == null) {
+            throw new IllegalArgumentException();
+        }
+        String key = cls.toString();
+        if (OBJECT_MAP.containsKey(key)) {
+            return cls.cast(OBJECT_MAP.get(key));
+        } else {
+            return cls.cast(OBJECT_MAP.computeIfAbsent(key, k -> {
+                try {
+                    return cls.getDeclaredConstructor().newInstance(args);
+                } catch (InstantiationException | InvocationTargetException | NoSuchMethodException | IllegalAccessException e) {
+                    throw new RuntimeException(e.getMessage(), e);
+                }
+            }));
+        }
+    }
 }

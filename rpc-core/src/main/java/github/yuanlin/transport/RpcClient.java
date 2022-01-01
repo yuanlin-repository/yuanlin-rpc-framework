@@ -1,6 +1,9 @@
 package github.yuanlin.transport;
 
 import github.yuanlin.transport.dto.RpcRequest;
+import github.yuanlin.transport.dto.RpcResponse;
+
+import java.util.concurrent.CompletableFuture;
 
 /**
  * RPC 客户端接口
@@ -15,5 +18,5 @@ public interface RpcClient {
      * @param rpcRequest RPC 请求
      * @return RPC 响应
      */
-    Object sendRequest(RpcRequest rpcRequest);
+    CompletableFuture<RpcResponse<Object>> sendRequest(RpcRequest rpcRequest);
 }

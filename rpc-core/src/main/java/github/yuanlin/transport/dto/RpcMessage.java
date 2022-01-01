@@ -5,7 +5,7 @@ import lombok.*;
 /**
  * RPC 数据包
  *
- *      4byte       4byte       4byte       1byte       1byte        1byte       4byte
+ *      4byte       4byte       2byte       1byte       1byte        1byte       4byte
  * +------------+------------+---------+-----------+-------------+-----------+------------+
  * |    魔术位   |  整体长度   |  头长度  |   协议版本  |   消息类型   |  序列化方式 |    请求ID   |
  * +-----------+------------+---------+-----------+-------------+-----------+-------------+
@@ -29,9 +29,9 @@ import lombok.*;
 public class RpcMessage {
 
     /**
-     * 协议版本
+     * 请求ID
      */
-    private byte version;
+    private int requestId;
     /**
      * 消息类型
      */
@@ -40,10 +40,6 @@ public class RpcMessage {
      * 序列化方式
      */
     private byte codec;
-    /**
-     * 请求ID
-     */
-    private int requestId;
     /**
      * 携带数据
      */
