@@ -36,7 +36,7 @@ public class NettyChannelProvider {
         String address = serviceAddress.toString();
         Channel channel = null;
         if (channels.contains(address)) {
-            channels.get(address);
+            channel = channels.get(address);
             if (channel != null && channel.isActive()) {
                 return channel;
             } else {
@@ -44,6 +44,9 @@ public class NettyChannelProvider {
                 channel = doConnect(serviceAddress);
                 channels.put(address, channel);
             }
+        } else {
+            channel = doConnect(serviceAddress);
+            channels.put(address, channel);
         }
         return channel;
     }

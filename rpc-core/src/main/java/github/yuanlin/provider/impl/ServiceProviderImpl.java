@@ -27,7 +27,7 @@ public class ServiceProviderImpl implements ServiceProvider {
     /**
      * 注册中心
      */
-    private final ServiceRegistry serviceRegistry = ExtensionLoader.getExtensionLoader(ServiceRegistry.class).getExtension("zk");
+    private final ServiceRegistry serviceRegistry = ExtensionLoader.getExtensionLoader(ServiceRegistry.class).getExtension("nacos");
 
     public ServiceProviderImpl() {}
 

@@ -9,6 +9,7 @@ import github.yuanlin.transport.constants.RpcConstants;
 import github.yuanlin.transport.dto.RpcMessage;
 import github.yuanlin.transport.dto.RpcRequest;
 import github.yuanlin.transport.dto.RpcResponse;
+import github.yuanlin.transport.netty.codec.NettyMessageDecoder;
 import github.yuanlin.transport.netty.codec.NettyMessageEncoder;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
@@ -24,6 +25,7 @@ import java.net.InetSocketAddress;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * RPC 客户端（基于 Netty 实现）
@@ -36,6 +38,10 @@ public class NettyClient implements RpcClient {
 
     private final Bootstrap bootstrap;
     private final EventLoopGroup eventLoopGroup;
+    /**
+     * 数据报ID生成
+     */
+    private final AtomicInteger requestIdProvider;
     /**
      * 服务发现
      */
@@ -62,13 +68,14 @@ public class NettyClient implements RpcClient {
                         ChannelPipeline p = ch.pipeline();
                         p.addLast(new IdleStateHandler(0, 5, 0, TimeUnit.SECONDS));
                         p.addLast(new NettyMessageEncoder());
-                        p.addLast(new NettyMessageEncoder());
+                        p.addLast(new NettyMessageDecoder());
                         p.addLast(new NettyClientHandler());
                     }
                 });
-        serviceDiscovery = ExtensionLoader.getExtensionLoader(ServiceDiscovery.class).getExtension("zk");
+        serviceDiscovery = ExtensionLoader.getExtensionLoader(ServiceDiscovery.class).getExtension("nacos");
         channelProvider = SingletonFactory.getInstance(NettyChannelProvider.class, bootstrap);
         unprocessedRequests = SingletonFactory.getInstance(UnprocessedRequests.class);
+        requestIdProvider = new AtomicInteger();
     }
 
     @Override
@@ -83,8 +90,9 @@ public class NettyClient implements RpcClient {
             unprocessedRequests.put(rpcRequest.getRequestId(), resultFuture);
             // 向服务器发送 RPC 请求
             RpcMessage rpcMessage = RpcMessage.builder()
+                    .requestId(requestIdProvider.incrementAndGet())
                     .payload(rpcRequest)
-                    .codec(SerializationEnum.PROTOSTUFF.getCode())
+                    .codec(SerializationEnum.HESSIAN.getCode())
                     .messageType(RpcConstants.REQUEST_TYPE)
                     .build();
             channel.writeAndFlush(rpcMessage).addListener((ChannelFutureListener) future -> {

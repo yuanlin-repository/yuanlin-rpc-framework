@@ -43,8 +43,8 @@ public class SingletonFactory {
         } else {
             return cls.cast(OBJECT_MAP.computeIfAbsent(key, k -> {
                 try {
-                    return cls.getDeclaredConstructor().newInstance(args);
-                } catch (InstantiationException | InvocationTargetException | NoSuchMethodException | IllegalAccessException e) {
+                    return cls.getConstructors()[0].newInstance(args);
+                } catch (InstantiationException | InvocationTargetException | IllegalAccessException e) {
                     throw new RuntimeException(e.getMessage(), e);
                 }
             }));

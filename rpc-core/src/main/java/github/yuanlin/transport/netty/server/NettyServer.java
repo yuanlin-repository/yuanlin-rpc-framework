@@ -30,8 +30,6 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class NettyServer extends AbstractRpcServer implements BeanPostProcessor {
 
-    public NettyServer() {}
-
     public NettyServer(String host, int port) {
         super();
         this.host = host;
