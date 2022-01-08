@@ -1,16 +1,3 @@
-/.idea/
-/target/
-/rpc-core/target/
-/rpc-common/target/
-/demo-api/target/
-/demo-client/target/
-/demo-server/target/
-/demo-server/demo-server.iml
-/demo-client/demo-client.iml
-/yuanlin-rpc-framework.iml.iml
-/rpc-core/rpc-core.iml
-/rpc-common/rpc-common.iml
-
 /.settings
 */.settings
 .classpath

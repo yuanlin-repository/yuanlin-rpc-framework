@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b22d0857-f75c-4fc5-8502-51a478819e6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/factory/SingletonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/factory/SingletonFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/impl/ServiceProviderImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/impl/ServiceProviderImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyChannelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyChannelProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java" afterDir="false" />
-    </list>
+    <list default="true" id="b22d0857-f75c-4fc5-8502-51a478819e6f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/rpc-core/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/demo-server/target/" />
@@ -29,8 +23,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="87" column="49" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
+            <state relative-caret-position="324">
+              <caret line="102" column="71" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -229,7 +223,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="51" />
     <option name="y" value="13" />
     <option name="width" value="1798" />
@@ -802,29 +796,11 @@
       <updated>1641001764000</updated>
       <workItem from="1641001767144" duration="11005000" />
       <workItem from="1641371055859" duration="2324000" />
-      <workItem from="1641385534549" duration="16877000" />
+      <workItem from="1641385534549" duration="17815000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNettyServerAndClient_testNettyClient - 2022.01.08 at 14h 46m 31s.xml">
-      <configuration name="TestNettyServerAndClient.testNettyClient" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestNettyServerAndClient_testNettyServer - 2022.01.08 at 14h 50m 56s.xml">
-      <configuration name="TestNettyServerAndClient.testNettyServer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestNettyServerAndClient_testNettyClient - 2022.01.08 at 14h 51m 46s.xml">
-      <configuration name="TestNettyServerAndClient.testNettyClient" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestNettyServerAndClient_testNettyServer - 2022.01.08 at 14h 51m 54s.xml">
-      <configuration name="TestNettyServerAndClient.testNettyServer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestNettyServerAndClient_testNettyClient - 2022.01.08 at 14h 55m 23s.xml">
-      <configuration name="TestNettyServerAndClient.testNettyClient" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestNettyServerAndClient_testNettyServer - 2022.01.08 at 14h 56m 20s.xml">
-      <configuration name="TestNettyServerAndClient.testNettyServer" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestNettyServerAndClient_testNettyServer - 2022.01.08 at 15h 01m 39s.xml">
       <configuration name="TestNettyServerAndClient.testNettyServer" configurationId="JUnit" />
     </history-entry>
@@ -837,12 +813,30 @@
     <history-entry file="TestNettyServerAndClient_testNettyServer - 2022.01.08 at 15h 13m 18s.xml">
       <configuration name="TestNettyServerAndClient.testNettyServer" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestNettyServerAndClient_testNettyClient - 2022.01.08 at 15h 13m 48s.xml">
+      <configuration name="TestNettyServerAndClient.testNettyClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNettyServerAndClient_testNettyServer - 2022.01.08 at 15h 13m 48s.xml">
+      <configuration name="TestNettyServerAndClient.testNettyServer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNettyServerAndClient_testNettyServer - 2022.01.08 at 15h 16m 13s.xml">
+      <configuration name="TestNettyServerAndClient.testNettyServer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNettyServerAndClient_testNettyClient - 2022.01.08 at 15h 16m 13s.xml">
+      <configuration name="TestNettyServerAndClient.testNettyClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNettyServerAndClient_testNettyServer - 2022.01.08 at 15h 16m 40s.xml">
+      <configuration name="TestNettyServerAndClient.testNettyServer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNettyServerAndClient_testNettyClient - 2022.01.08 at 15h 16m 40s.xml">
+      <configuration name="TestNettyServerAndClient.testNettyClient" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56013000" />
+    <option name="totallyTimeSpent" value="56951000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="11" width="1438" height="813" extended-state="0" />
+    <frame x="41" y="11" width="1438" height="813" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49805447" visible="true" weight="0.25431034" />
       <window_info id="Structure" order="1" sideWeight="0.5019455" side_tool="true" weight="0.26572958" />
@@ -853,19 +847,19 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32898173" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.53867793" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.44866386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4895288" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32898173" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32630098" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32898173" />
       <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.32898173" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32770744" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.40600523" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.4050633" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -950,7 +944,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java</url>
-          <line>83</line>
+          <line>89</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
@@ -1369,8 +1363,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="87" column="49" selection-start-line="87" selection-start-column="49" selection-end-line="87" selection-end-column="49" />
+        <state relative-caret-position="324">
+          <caret line="102" column="71" selection-start-line="102" selection-start-column="20" selection-end-line="102" selection-end-column="71" />
         </state>
       </provider>
     </entry>
