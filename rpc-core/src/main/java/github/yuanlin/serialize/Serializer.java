@@ -1,11 +1,14 @@
 package github.yuanlin.serialize;
 
+import github.yuanlin.extension.SPI;
+
 /**
  * 序列化接口
  *
  * @author yuanlin
  * @date 2021/12/28/11:23
  */
+@SPI
 public interface Serializer {
 
     /**

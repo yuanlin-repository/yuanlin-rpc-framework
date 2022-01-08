@@ -1,6 +1,7 @@
 package github.yuanlin.registry;
 
 import com.alibaba.nacos.api.exception.NacosException;
+import github.yuanlin.extension.SPI;
 import github.yuanlin.transport.dto.RpcRequest;
 
 import java.net.InetSocketAddress;
@@ -11,6 +12,7 @@ import java.net.InetSocketAddress;
  * @author yuanlin
  * @date 2021/12/28/11:24
  */
+@SPI
 public interface ServiceDiscovery {
 
     /**

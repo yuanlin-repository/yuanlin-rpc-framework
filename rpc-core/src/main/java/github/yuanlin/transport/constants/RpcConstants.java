@@ -28,6 +28,7 @@ public class RpcConstants {
     public static final int MAX_FRAME_LENGTH = 8 * 1024 * 1024;
 
     // 头部长度（如果协议版本更新，扩展字段中有新的字段出现，则头长度需要更新）
+    public static final int FULL_LENGTH_FIELD_LENGTH = 4;
     public static final int HEAD_LENGTH = 17;
 
     // 魔数
