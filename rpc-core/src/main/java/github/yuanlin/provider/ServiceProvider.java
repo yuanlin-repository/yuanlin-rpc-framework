@@ -1,5 +1,7 @@
 package github.yuanlin.provider;
 
+import github.yuanlin.extension.SPI;
+
 import java.net.InetSocketAddress;
 
 /**
@@ -8,10 +10,11 @@ import java.net.InetSocketAddress;
  * @author yuanlin
  * @date 2021/12/28/13:16
  */
+@SPI
 public interface ServiceProvider {
 
     /**
-     * 添加服务 key : value => serviceName : serviceBean
+     * 发布服务 key : value => serviceName : serviceBean
      * @param serviceName 服务名称
      * @param serviceBean 服务实例
      * @param serviceAddress 服务地址

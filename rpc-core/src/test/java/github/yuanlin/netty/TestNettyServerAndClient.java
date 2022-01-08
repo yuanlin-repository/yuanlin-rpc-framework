@@ -12,8 +12,8 @@ import java.util.concurrent.ExecutionException;
 
 /**
  * 测试Netty客户端和服务器之间能够正确传输数据
- * 测试方法:
- *      1.调整 ServiceProviderImpl 和 NettyClient 中的注册中心实现
+ * 测试方法（测试前确保 ZooKeeper(port : 2181) 或 Nacos(port : 8848) 在本地启动）:
+ *      1.调整 AbstractServiceProvider 和 NettyClient 中的注册中心实现
  *      2.调整 NettyClient 中发送消息的序列化方式
  * 测试样例:
  *      1.注册中心 ZooKeeper + 序列化 Protostuff

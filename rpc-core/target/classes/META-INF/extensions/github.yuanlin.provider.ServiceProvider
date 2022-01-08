@@ -1,0 +1,2 @@
+zk=github.yuanlin.provider.zk.ZkServiceProvider
+nacos=github.yuanlin.provider.nacos.NacosServiceProvider

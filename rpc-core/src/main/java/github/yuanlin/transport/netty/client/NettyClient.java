@@ -1,10 +1,8 @@
 package github.yuanlin.transport.netty.client;
 
 import github.yuanlin.enums.SerializationEnum;
-import github.yuanlin.extension.ExtensionLoader;
 import github.yuanlin.factory.SingletonFactory;
-import github.yuanlin.registry.ServiceDiscovery;
-import github.yuanlin.transport.RpcClient;
+import github.yuanlin.transport.AbstractClient;
 import github.yuanlin.transport.constants.RpcConstants;
 import github.yuanlin.transport.dto.RpcMessage;
 import github.yuanlin.transport.dto.RpcRequest;
@@ -23,9 +21,7 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.net.InetSocketAddress;
 import java.util.concurrent.CompletableFuture;
-import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.TimeUnit;
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * RPC 客户端（基于 Netty 实现）
@@ -34,18 +30,10 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @date 2021/12/28/12:44
  */
 @Slf4j
-public class NettyClient implements RpcClient {
+public class NettyClient extends AbstractClient {
 
     private final Bootstrap bootstrap;
     private final EventLoopGroup eventLoopGroup;
-    /**
-     * 数据报ID生成
-     */
-    private final AtomicInteger requestIdProvider;
-    /**
-     * 服务发现
-     */
-    private final ServiceDiscovery serviceDiscovery;
     /**
      * 管理 Netty 的 channel
      */
@@ -72,10 +60,8 @@ public class NettyClient implements RpcClient {
                         p.addLast(new NettyClientHandler());
                     }
                 });
-        serviceDiscovery = ExtensionLoader.getExtensionLoader(ServiceDiscovery.class).getExtension("nacos");
         channelProvider = SingletonFactory.getInstance(NettyChannelProvider.class, bootstrap);
         unprocessedRequests = SingletonFactory.getInstance(UnprocessedRequests.class);
-        requestIdProvider = new AtomicInteger();
     }
 
     @Override

@@ -2,7 +2,7 @@ package github.yuanlin.transport.netty.server;
 
 import github.yuanlin.annotation.RpcService;
 import github.yuanlin.config.ServiceConfig;
-import github.yuanlin.transport.AbstractRpcServer;
+import github.yuanlin.transport.AbstractServer;
 import github.yuanlin.transport.netty.codec.NettyMessageDecoder;
 import github.yuanlin.transport.netty.codec.NettyMessageEncoder;
 import io.netty.bootstrap.ServerBootstrap;
@@ -28,7 +28,7 @@ import java.util.concurrent.TimeUnit;
  */
 @Slf4j
 @Component
-public class NettyServer extends AbstractRpcServer implements BeanPostProcessor {
+public class NettyServer extends AbstractServer implements BeanPostProcessor {
 
     public NettyServer(String host, int port) {
         super();

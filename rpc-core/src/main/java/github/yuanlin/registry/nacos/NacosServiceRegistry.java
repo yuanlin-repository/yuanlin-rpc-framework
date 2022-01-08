@@ -21,7 +21,7 @@ public class NacosServiceRegistry implements ServiceRegistry {
     public void registerService(String serviceName, InetSocketAddress serviceAddress) {
         try {
             NacosUtils.registerService(serviceName, serviceAddress);
-        } catch (NacosException e) {
+        } catch (Exception e) {
             log.error("register service [{}] fail", serviceName, e);
             throw new RpcException(ErrorEnum.RIGISTER_SERVICE_FAILED);
         }

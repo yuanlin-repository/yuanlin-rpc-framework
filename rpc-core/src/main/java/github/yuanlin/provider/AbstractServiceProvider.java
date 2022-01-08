@@ -1,4 +1,4 @@
-package github.yuanlin.provider.impl;
+package github.yuanlin.provider;
 
 import github.yuanlin.enums.ErrorEnum;
 import github.yuanlin.exception.RpcException;
@@ -18,18 +18,16 @@ import java.util.concurrent.ConcurrentHashMap;
  * @date 2021/12/28/13:23
  */
 @Slf4j
-public class ServiceProviderImpl implements ServiceProvider {
+public abstract class AbstractServiceProvider implements ServiceProvider {
 
     /**
      * key : value => serviceName : serviceBean
      */
-    private final Map<String, Object> registeredService = new ConcurrentHashMap<>();
+    protected final Map<String, Object> registeredService = new ConcurrentHashMap<>();
     /**
      * 注册中心
      */
-    private final ServiceRegistry serviceRegistry = ExtensionLoader.getExtensionLoader(ServiceRegistry.class).getExtension("nacos");
-
-    public ServiceProviderImpl() {}
+    protected ServiceRegistry serviceRegistry;
 
     @Override
     public <T> void addService(String serviceName, T service, InetSocketAddress serviceAddress) {

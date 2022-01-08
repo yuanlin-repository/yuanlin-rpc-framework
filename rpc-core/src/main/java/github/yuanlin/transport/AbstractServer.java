@@ -1,11 +1,11 @@
 package github.yuanlin.transport;
 
 import github.yuanlin.config.ServiceConfig;
+import github.yuanlin.extension.ExtensionLoader;
 import github.yuanlin.factory.SingletonFactory;
 import github.yuanlin.provider.ServiceProvider;
-import github.yuanlin.provider.impl.ServiceProviderImpl;
+import github.yuanlin.provider.AbstractServiceProvider;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.util.Assert;
 
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
@@ -18,17 +18,10 @@ import java.util.Set;
  * @author yuanlin
  * @date 2021/12/30/16:38
  */
-public abstract class AbstractRpcServer implements RpcServer {
+public abstract class AbstractServer implements RpcServer {
 
     protected String host = InetAddress.getLoopbackAddress().getHostAddress();
     protected int port = 8002;
-
-    public AbstractRpcServer() {
-        if (StringUtils.isEmpty(host)) {
-            throw new IllegalArgumentException("host can't be null");
-        }
-        serviceProvider = SingletonFactory.getInstance(ServiceProviderImpl.class);
-    }
     /**
      * 存放扫描到的标注 @RpcService 的服务
      */
@@ -37,6 +30,13 @@ public abstract class AbstractRpcServer implements RpcServer {
      * 服务提供
      */
     protected ServiceProvider serviceProvider;
+
+    public AbstractServer() {
+        if (StringUtils.isEmpty(host)) {
+            throw new IllegalArgumentException("host can't be null");
+        }
+        serviceProvider = ExtensionLoader.getExtensionLoader(ServiceProvider.class).getExtension("nacos");
+    }
 
     @Override
     public <T> void publishService(String serviceName, T serviceBean) {
