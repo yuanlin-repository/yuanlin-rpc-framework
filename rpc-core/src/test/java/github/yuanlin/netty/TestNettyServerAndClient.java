@@ -1,6 +1,8 @@
 package github.yuanlin.netty;
 
 import github.yuanlin.config.ServiceConfig;
+import github.yuanlin.netty.service.HelloService;
+import github.yuanlin.netty.service.HelloServiceImpl;
 import github.yuanlin.transport.dto.RpcRequest;
 import github.yuanlin.transport.dto.RpcResponse;
 import github.yuanlin.transport.netty.client.NettyClient;
@@ -32,7 +34,7 @@ import java.util.concurrent.ExecutionException;
 public class TestNettyServerAndClient {
 
     /**
-     * receive msg: [RpcMessage(requestId=0, messageType=1, codec=4, payload=RpcRequest(requestId=123456, interfaceName=github.yuanlin.netty.HelloService, methodName=hello, parameterTypes=[class java.lang.String], parameters=[hello], version=01, group=test))]
+     * receive msg: [RpcMessage(requestId=0, messageType=1, codec=4, payload=RpcRequest(requestId=123456, interfaceName=github.yuanlin.netty.service.HelloService, methodName=hello, parameterTypes=[class java.lang.String], parameters=[hello], version=01, group=test))]
      */
     @Test
     public void testNettyServer() throws ExecutionException, InterruptedException {
@@ -51,7 +53,7 @@ public class TestNettyServerAndClient {
     }
 
     /**
-     * client send message: [RpcMessage(requestId=0, messageType=1, codec=4, payload=RpcRequest(requestId=123456, interfaceName=github.yuanlin.netty.HelloService, methodName=hello, parameterTypes=[class java.lang.String], parameters=[hello], version=01, group=test))]
+     * client send message: [RpcMessage(requestId=0, messageType=1, codec=4, payload=RpcRequest(requestId=123456, interfaceName=github.yuanlin.netty.service.HelloService, methodName=hello, parameterTypes=[class java.lang.String], parameters=[hello], version=01, group=test))]
      */
     @Test
     public void testNettyClient() throws ExecutionException, InterruptedException {
@@ -60,7 +62,7 @@ public class TestNettyServerAndClient {
         // 2. 发送RPC请求
         RpcRequest rpcRequest = RpcRequest.builder()
                 .requestId("123456")
-                .interfaceName("github.yuanlin.netty.HelloService")
+                .interfaceName("github.yuanlin.netty.service.HelloService")
                 .methodName("hello")
                 .parameterTypes(new Class[]{String.class})
                 .parameters(new Object[]{"hello"})

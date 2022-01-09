@@ -20,7 +20,8 @@ public enum ErrorEnum {
     ENCODE_FRAME_ERROR("编码时发生错误"),
     DECODE_FRAME_ERROR("解码时发生错误"),
     UNKNOWN_PROTOCAL("协议包无法识别"),
-    UNSUPPORTED_PROTOCAL_VERSION("不支持的协议版本");
+    UNSUPPORTED_PROTOCAL_VERSION("不支持的协议版本"),
+    CALL_SERVICE_ERROR("调用服务失败");
 
     private final String message;
 }
