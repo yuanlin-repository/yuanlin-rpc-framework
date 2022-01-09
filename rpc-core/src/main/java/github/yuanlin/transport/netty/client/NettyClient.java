@@ -46,6 +46,9 @@ public class NettyClient extends AbstractClient {
     public NettyClient() {
         bootstrap = new Bootstrap();
         eventLoopGroup = new NioEventLoopGroup();
+        channelProvider = SingletonFactory.getInstance(NettyChannelProvider.class, bootstrap);
+        unprocessedRequests = SingletonFactory.getInstance(UnprocessedRequests.class);
+
         bootstrap.group(eventLoopGroup)
                 .channel(NioSocketChannel.class)
                 .handler(new LoggingHandler(LogLevel.INFO))
@@ -57,11 +60,9 @@ public class NettyClient extends AbstractClient {
                         p.addLast(new IdleStateHandler(0, 5, 0, TimeUnit.SECONDS));
                         p.addLast(new NettyMessageEncoder());
                         p.addLast(new NettyMessageDecoder());
-                        p.addLast(new NettyClientHandler());
+                        p.addLast(new NettyClientHandler(channelProvider));
                     }
                 });
-        channelProvider = SingletonFactory.getInstance(NettyChannelProvider.class, bootstrap);
-        unprocessedRequests = SingletonFactory.getInstance(UnprocessedRequests.class);
     }
 
     @Override
