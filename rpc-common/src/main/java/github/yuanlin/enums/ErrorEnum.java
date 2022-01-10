@@ -21,7 +21,9 @@ public enum ErrorEnum {
     DECODE_FRAME_ERROR("解码时发生错误"),
     UNKNOWN_PROTOCAL("协议包无法识别"),
     UNSUPPORTED_PROTOCAL_VERSION("不支持的协议版本"),
-    CALL_SERVICE_ERROR("调用服务失败");
+    CALL_SERVICE_ERROR("调用服务失败"),
+    RPC_INVOCATION_FAILURE("远程调用失败"),
+    REQUEST_NOT_MATCH_RESPONSE("请求响应不匹配");
 
     private final String message;
 }

@@ -17,6 +17,7 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.logging.LogLevel;
 import io.netty.handler.logging.LoggingHandler;
 import io.netty.handler.timeout.IdleStateHandler;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 
 import java.net.InetSocketAddress;
@@ -65,8 +66,9 @@ public class NettyClient extends AbstractClient {
                 });
     }
 
+    @SneakyThrows
     @Override
-    public CompletableFuture<RpcResponse<Object>> sendRequest(RpcRequest rpcRequest) {
+    public RpcResponse<Object> sendRequest(RpcRequest rpcRequest) {
         // 调用结果
         CompletableFuture<RpcResponse<Object>> resultFuture = new CompletableFuture<>();
         // 服务发现，寻找服务地址
@@ -94,6 +96,6 @@ public class NettyClient extends AbstractClient {
         } else {
             throw new IllegalStateException();
         }
-        return resultFuture;
+        return resultFuture.get();
     }
 }

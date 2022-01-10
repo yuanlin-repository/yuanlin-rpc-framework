@@ -18,5 +18,5 @@ public interface RpcClient {
      * @param rpcRequest RPC 请求
      * @return RPC 响应
      */
-    CompletableFuture<RpcResponse<Object>> sendRequest(RpcRequest rpcRequest);
+    RpcResponse<Object> sendRequest(RpcRequest rpcRequest);
 }

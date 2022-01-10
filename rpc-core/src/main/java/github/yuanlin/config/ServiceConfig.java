@@ -24,6 +24,10 @@ public class ServiceConfig {
     private String version = "";
 
     public String getServiceName() {
-        return service.getClass().getInterfaces()[0].getName() + group + version;
+        return getInterfaceName() + group + version;
+    }
+
+    public String getInterfaceName() {
+        return service.getClass().getInterfaces()[0].getName();
     }
 }
