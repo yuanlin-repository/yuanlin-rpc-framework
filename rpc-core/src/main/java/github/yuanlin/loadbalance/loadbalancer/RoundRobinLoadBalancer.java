@@ -18,7 +18,7 @@ public class RoundRobinLoadBalancer extends AbstractLoadBalancer {
     private final AtomicInteger nextServerCyclicCounter = new AtomicInteger(-1);
 
     @Override
-    protected String select(List<String> serviceAddresses) {
+    protected String select(List<String> serviceAddresses, RpcRequest rpcRequest) {
         int nextIdx = incrementAndGetIdx(serviceAddresses.size());
         return serviceAddresses.get(nextIdx);
     }

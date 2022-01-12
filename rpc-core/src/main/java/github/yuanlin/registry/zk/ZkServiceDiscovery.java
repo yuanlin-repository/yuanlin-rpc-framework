@@ -2,6 +2,8 @@ package github.yuanlin.registry.zk;
 
 import github.yuanlin.enums.ErrorEnum;
 import github.yuanlin.exception.RpcException;
+import github.yuanlin.extension.ExtensionLoader;
+import github.yuanlin.loadbalance.LoadBalancer;
 import github.yuanlin.registry.ServiceDiscovery;
 import github.yuanlin.registry.utils.CuratorUtils;
 import github.yuanlin.transport.dto.RpcRequest;
@@ -21,10 +23,10 @@ import java.util.List;
 @Slf4j
 public class ZkServiceDiscovery implements ServiceDiscovery {
 
-    // private final LoadBalancer loadBalancer;
+    private final LoadBalancer loadBalancer;
 
     public ZkServiceDiscovery() {
-        // this.loadBalancer = ExtensionLoader.getExtensionLoader(LoadBalancer.class).getExtension("loadBalance");
+         this.loadBalancer = ExtensionLoader.getExtensionLoader(LoadBalancer.class).getExtension("loadbalancer");
     }
 
     @Override
@@ -35,9 +37,8 @@ public class ZkServiceDiscovery implements ServiceDiscovery {
         if (CollectionUtils.isEmpty(serviceAddresses)) {
             throw new RpcException(ErrorEnum.SERVICE_CAN_NOT_BE_FOUND, serviceName);
         }
-//        String targetServiceAddress = loadBalancer.selectServiceAddress(serviceAddresses, rpcRequest);
-//        log.info("find service [{}] address successfully", targetServiceAddress);
-        String targetServiceAddress = serviceAddresses.get(0);
+        String targetServiceAddress = loadBalancer.selectServiceAddress(serviceAddresses, rpcRequest);
+        log.info("find service [{}] address successfully", targetServiceAddress);
         String[] hostAndPort = targetServiceAddress.split(":");
         String host = hostAndPort[0];
         int port = Integer.parseInt(hostAndPort[1]);

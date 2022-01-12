@@ -14,6 +14,8 @@ import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
+ * 未完成测试
+ *
  * refer to dubbo consistent hash load balance: https://github.com/apache/dubbo/blob/2d9583adf26a2d8bd6fb646243a9fe80a77e65d5/dubbo-cluster/src/main/java/org/apache/dubbo/rpc/cluster/loadbalance/ConsistentHashLoadBalance.java
  *
  * @author RicardoZ
@@ -37,7 +39,7 @@ public class ConsistentHashLoadBalancer extends AbstractLoadBalancer {
             selector = selectors.get(rpcServiceName);
         }
         // 从哈希环中选出比当前节点哈希值大的第一个节点
-        return selector.select(rpcServiceName + Arrays.stream(rpcRequest.getParameters()));
+        return selector.select(rpcServiceName + Arrays.asList(rpcRequest.getParameters()));
     }
 
     static class ConsistentHashSelector {

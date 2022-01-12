@@ -3,6 +3,8 @@ package github.yuanlin.registry.nacos;
 import com.alibaba.nacos.api.exception.NacosException;
 import github.yuanlin.enums.ErrorEnum;
 import github.yuanlin.exception.RpcException;
+import github.yuanlin.extension.ExtensionLoader;
+import github.yuanlin.loadbalance.LoadBalancer;
 import github.yuanlin.registry.ServiceDiscovery;
 import github.yuanlin.registry.utils.NacosUtils;
 import github.yuanlin.transport.dto.RpcRequest;
@@ -21,10 +23,10 @@ import java.util.List;
 @Slf4j
 public class NacosServiceDiscovery implements ServiceDiscovery {
 
-//    private final LoadBalancer loadBalancer;
+    private final LoadBalancer loadBalancer;
 
     public NacosServiceDiscovery() {
-//        this.loadBalancer = ExtensionLoader.getExtensionLoader(LoadBalancer.class).getExtension("loadBalance");
+        this.loadBalancer = ExtensionLoader.getExtensionLoader(LoadBalancer.class).getExtension("loadbalance");
     }
 
     @Override

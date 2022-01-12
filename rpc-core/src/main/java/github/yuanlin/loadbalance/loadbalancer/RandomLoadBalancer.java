@@ -16,7 +16,7 @@ import java.util.Random;
 public class RandomLoadBalancer extends AbstractLoadBalancer {
 
     @Override
-    protected String select(List<String> serviceAddresses) {
+    protected String select(List<String> serviceAddresses, RpcRequest rpcRequest) {
         return serviceAddresses.get(new Random().nextInt(serviceAddresses.size()));
     }
 }
