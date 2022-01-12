@@ -1,5 +1,7 @@
 package github.yuanlin.transport.netty.client;
 
+import github.yuanlin.enums.ErrorEnum;
+import github.yuanlin.exception.RpcException;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import lombok.SneakyThrows;
@@ -59,7 +61,8 @@ public class NettyChannelProvider {
                 log.info("The client has connected [{}] successful!", serviceAddress.toString());
                 completableFuture.complete(future.channel());
             } else {
-                throw new IllegalStateException();
+                log.error("failed to connect to server: [{}]", serviceAddress);
+                throw new RpcException(ErrorEnum.FAILED_TO_CONNECT_TO_SERVER);
             }
         });
         return completableFuture.get();

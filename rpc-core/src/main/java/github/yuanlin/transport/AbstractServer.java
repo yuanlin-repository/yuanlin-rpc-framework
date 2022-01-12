@@ -32,14 +32,11 @@ public abstract class AbstractServer implements RpcServer {
     protected ServiceProvider serviceProvider;
 
     public AbstractServer() {
-        if (StringUtils.isEmpty(host)) {
-            throw new IllegalArgumentException("host can't be null");
-        }
         serviceProvider = ExtensionLoader.getExtensionLoader(ServiceProvider.class).getExtension("serviceProvider");
     }
 
     @Override
-    public <T> void publishService(String serviceName, T serviceBean) {
-        serviceProvider.addService(serviceName, serviceBean, new InetSocketAddress(host, port));
+    public <T> void publishService(ServiceConfig config) {
+        serviceProvider.addService(config.getServiceName(), config.getService(), new InetSocketAddress(host, port));
     }
 }

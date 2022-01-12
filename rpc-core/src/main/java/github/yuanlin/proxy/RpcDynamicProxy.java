@@ -44,7 +44,7 @@ public class RpcDynamicProxy implements InvocationHandler {
     public Object invoke(Object bean, Method method, Object[] args) throws Throwable {
         RpcRequest rpcRequest = RpcRequest.builder()
                 .requestId(UUID.randomUUID().toString())
-                .interfaceName(config.getInterfaceName())
+                .interfaceName(method.getDeclaringClass().getName())
                 .methodName(method.getName())
                 .parameterTypes(method.getParameterTypes())
                 .parameters(args)

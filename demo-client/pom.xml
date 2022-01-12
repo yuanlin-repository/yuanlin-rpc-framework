@@ -11,5 +11,24 @@
 
     <artifactId>demo-client</artifactId>
 
-
+    <dependencies>
+        <!-- rpc-core -->
+        <dependency>
+            <groupId>github.yuanlin</groupId>
+            <artifactId>rpc-core</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- demo-api -->
+        <dependency>
+            <groupId>github.yuanlin</groupId>
+            <artifactId>demo-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <!-- spring -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${version.spring}</version>
+        </dependency>
+    </dependencies>
 </project>

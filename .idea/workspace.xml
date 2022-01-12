@@ -2,12 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b22d0857-f75c-4fc5-8502-51a478819e6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/nacos/NacosServiceDiscovery.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/nacos/NacosServiceDiscovery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/annotation/RpcService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/annotation/RpcService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/serialize/json/JsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/serialize/json/JsonSerializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.provider.ServiceProvider" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.provider.ServiceProvider" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.registry.ServiceDiscovery" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.registry.ServiceDiscovery" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyChannelProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyChannelProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestRpcDynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestRpcDynamicProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/target/classes/github/yuanlin/proxy/RpcDynamicProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/target/classes/github/yuanlin/proxy/RpcDynamicProxy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/target/classes/github/yuanlin/serialize/json/JsonSerializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/target/classes/github/yuanlin/serialize/json/JsonSerializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/target/classes/github/yuanlin/transport/AbstractServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/target/classes/github/yuanlin/transport/AbstractServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/target/classes/github/yuanlin/transport/RpcServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/target/classes/github/yuanlin/transport/RpcServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/target/classes/github/yuanlin/transport/netty/server/NettyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/target/classes/github/yuanlin/transport/netty/server/NettyServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/target/test-classes/github/yuanlin/netty/TestCallService.class" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/target/test-classes/github/yuanlin/netty/TestCallService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/target/test-classes/github/yuanlin/netty/TestNettyTransport.class" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/target/test-classes/github/yuanlin/netty/TestNettyTransport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/target/test-classes/github/yuanlin/netty/TestRpcDynamicProxy.class" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/target/test-classes/github/yuanlin/netty/TestRpcDynamicProxy.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/rpc-core/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,37 +44,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/loadbalance/TestLoadBalancer.java">
+        <entry file="file://$PROJECT_DIR$/demo-server/src/main/java/github/yuanlin/DemoServerMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.loadbalance.LoadBalancer">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="36" selection-start-column="36" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="25" column="116" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="116" />
+            <state relative-caret-position="260">
+              <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,55 +56,101 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClientHandler.java">
+        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
+            <state relative-caret-position="160">
+              <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#775#776#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java">
+        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/DemoClientMain02.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="31" column="113" selection-start-line="31" selection-start-column="113" selection-end-line="31" selection-end-column="113" />
+            <state relative-caret-position="340">
+              <caret line="17" column="52" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#751#752#0" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.provider.ServiceProvider">
+        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyChannelProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="60" selection-start-column="60" selection-end-column="60" />
+            <state relative-caret-position="451">
+              <caret line="63" column="77" selection-start-line="63" selection-start-column="77" selection-end-line="63" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.registry.ServiceDiscovery">
+        <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/DemoClientMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="62" selection-start-column="62" selection-end-column="62" />
+            <state relative-caret-position="241">
+              <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java">
+        <entry file="file://$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/exception/RpcException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="37" column="113" selection-start-line="37" selection-start-column="113" selection-end-line="37" selection-end-column="113" />
+            <state relative-caret-position="200">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/nacos/NacosServiceDiscovery.java">
+        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/annotation/RpcAutowire.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="28" column="109" selection-start-line="28" selection-start-column="109" selection-end-line="28" selection-end-column="109" />
+            <state relative-caret-position="205">
+              <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/spring.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/demo-server/src/main/java/github/yuanlin/DemoServerMain02.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,25 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/codec/NettyMessageEncoder.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/codec/NettyMessageDecoder.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.serialize.Serializer" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.registry.ServiceRegistry" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/serialize/Serializer.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/ServiceDiscovery.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/loadbalance/LoadBalancer.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestEncodeAndDecode.java" />
-        <option value="$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/factory/SingletonFactory.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyChannelProvider.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/UnprocessedRequests.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/impl/ServiceProviderImpl.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/ServiceProviderImpl.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractRpcClient.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/ServiceRegistry.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractRpcServer.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/AbstractServiceProvider.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/zk/ZkServiceProvider.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/nacos/NacosServiceProvider.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/ServiceProvider.java" />
@@ -186,12 +202,7 @@
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/config/ServiceConfig.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcClient.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java" />
-        <option value="$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestRpcDynamicProxy.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/loadbalance/AbstractLoadBalancer.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/zk/ZkServiceDiscovery.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/loadbalance/loadbalancer/RoundRobinLoadBalancer.java" />
@@ -201,10 +212,34 @@
         <option value="$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.loadbalance.LoadBalancer" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/nacos/NacosServiceDiscovery.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.registry.ServiceDiscovery" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.provider.ServiceProvider" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/serialize/json/JsonSerializer.java" />
+        <option value="$PROJECT_DIR$/demo-api/src/main/java/github/yuanlin/HiService.java" />
+        <option value="$PROJECT_DIR$/demo-server/pom.xml" />
+        <option value="$PROJECT_DIR$/demo-client/pom.xml" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcServer.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestRpcDynamicProxy.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/DemoCLinetMain.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/DemoCLientMain.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/DemoClientMain.java" />
+        <option value="$PROJECT_DIR$/demo-server/src/main/java/github/yuanlin/DemoServerMain.java" />
+        <option value="$PROJECT_DIR$/demo-server/src/main/java/github/yuanlin/service/HiServiceImpl.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/annotation/RpcService.java" />
+        <option value="$PROJECT_DIR$/demo-server/src/main/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java" />
+        <option value="$PROJECT_DIR$/demo-server/src/main/java/github/yuanlin/DemoServerMain02.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/DemoCLientMain02.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/resources/spring.xml" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/Demo02Invocation.java" />
+        <option value="$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/DemoClientMain02.java" />
+        <option value="$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyChannelProvider.java" />
       </list>
     </option>
   </component>
@@ -213,6 +248,13 @@
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -231,9 +273,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="597" />
-    <option name="width" value="1267" />
-    <option name="height" value="1080" />
+    <option name="x" value="252" />
+    <option name="width" value="1157" />
+    <option name="height" value="853" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -254,6 +296,137 @@
             <path>
               <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
               <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
+              <item name="demo-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
               <item name="rpc-common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -285,63 +458,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="extension" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="factory" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-common" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -396,167 +512,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="loadbalance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="loadbalance" type="462c0819:PsiDirectoryNode" />
-              <item name="loadbalancer" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-              <item name="nacos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="provider" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
               <item name="proxy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-              <item name="nacos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-              <item name="zk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="serialize" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="serialize" type="462c0819:PsiDirectoryNode" />
-              <item name="hessian" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="serialize" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="serialize" type="462c0819:PsiDirectoryNode" />
-              <item name="kryo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="serialize" type="462c0819:PsiDirectoryNode" />
-              <item name="protostuff" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -587,53 +543,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
               <item name="transport" type="462c0819:PsiDirectoryNode" />
-              <item name="constants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="transport" type="462c0819:PsiDirectoryNode" />
-              <item name="dto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="transport" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="transport" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="transport" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="codec" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
@@ -647,109 +557,6 @@
               <item name="netty" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="extensions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="loadbalance" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="serialize" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -762,6 +569,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -783,7 +593,59 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCallService.testCallService_Client1">
+  <component name="RunManager" selected="Application.DemoClientMain02">
+    <configuration name="DemoClientMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="github.yuanlin.DemoClientMain" />
+      <module name="demo-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.yuanlin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoClientMain02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="github.yuanlin.DemoClientMain02" />
+      <module name="demo-client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.yuanlin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="github.yuanlin.DemoServerMain" />
+      <module name="demo-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.yuanlin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DemoServerMain02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="github.yuanlin.DemoServerMain02" />
+      <module name="demo-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.yuanlin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestCallService.testCallService_Client1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpc-core" />
       <extension name="coverage">
@@ -800,77 +662,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCallService.testCallService_Server1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rpc-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.yuanlin.netty.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github.yuanlin.netty" />
-      <option name="MAIN_CLASS_NAME" value="github.yuanlin.netty.TestCallService" />
-      <option name="METHOD_NAME" value="testCallService_Server1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLoadBalancer.testConsistentHashLoadBalancer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rpc-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.yuanlin.loadbalance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github.yuanlin.loadbalance" />
-      <option name="MAIN_CLASS_NAME" value="github.yuanlin.loadbalance.TestLoadBalancer" />
-      <option name="METHOD_NAME" value="testConsistentHashLoadBalancer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLoadBalancer.testRandomLoadBalancer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rpc-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.yuanlin.loadbalance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github.yuanlin.loadbalance" />
-      <option name="MAIN_CLASS_NAME" value="github.yuanlin.loadbalance.TestLoadBalancer" />
-      <option name="METHOD_NAME" value="testRandomLoadBalancer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestLoadBalancer.testRoundRobinLoadBalancer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rpc-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.yuanlin.loadbalance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github.yuanlin.loadbalance" />
-      <option name="MAIN_CLASS_NAME" value="github.yuanlin.loadbalance.TestLoadBalancer" />
-      <option name="METHOD_NAME" value="testRoundRobinLoadBalancer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DemoClientMain02" />
+        <item itemvalue="Application.DemoServerMain02" />
+        <item itemvalue="Application.DemoClientMain" />
+        <item itemvalue="Application.DemoServerMain" />
         <item itemvalue="JUnit.TestCallService.testCallService_Client1" />
-        <item itemvalue="JUnit.TestCallService.testCallService_Server1" />
-        <item itemvalue="JUnit.TestLoadBalancer.testConsistentHashLoadBalancer" />
-        <item itemvalue="JUnit.TestLoadBalancer.testRandomLoadBalancer" />
-        <item itemvalue="JUnit.TestLoadBalancer.testRoundRobinLoadBalancer" />
       </list>
     </recent_temporary>
   </component>
@@ -890,17 +688,11 @@
       <workItem from="1641650787215" duration="1123000" />
       <workItem from="1641652032686" duration="497000" />
       <workItem from="1641728116853" duration="7035000" />
-      <workItem from="1641959603809" duration="11389000" />
+      <workItem from="1641959603809" duration="15863000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestLoadBalancer_testConsistentHashLoadBalancer - 2022.01.12 at 16h 07m 18s.xml">
-      <configuration name="TestLoadBalancer.testConsistentHashLoadBalancer" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestLoadBalancer_testConsistentHashLoadBalancer - 2022.01.12 at 16h 09m 58s.xml">
-      <configuration name="TestLoadBalancer.testConsistentHashLoadBalancer" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestLoadBalancer_testConsistentHashLoadBalancer - 2022.01.12 at 16h 21m 51s.xml">
       <configuration name="TestLoadBalancer.testConsistentHashLoadBalancer" configurationId="JUnit" />
     </history-entry>
@@ -925,9 +717,15 @@
     <history-entry file="TestCallService_testCallService_Server1 - 2022.01.12 at 18h 20m 26s.xml">
       <configuration name="TestCallService.testCallService_Server1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestCallService_testCallService_Client1 - 2022.01.12 at 18h 23m 24s.xml">
+      <configuration name="TestCallService.testCallService_Client1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestCallService_testCallService_Server1 - 2022.01.12 at 18h 45m 50s.xml">
+      <configuration name="TestCallService.testCallService_Server1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86116000" />
+    <option name="totallyTimeSpent" value="90590000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -940,6 +738,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49805447" visible="true" weight="0.25603217" />
       <window_info id="Structure" order="1" sideWeight="0.5019455" side_tool="true" weight="0.26572958" />
@@ -949,9 +748,9 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32460734" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37958115" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4895288" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2591623" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37958115" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43324608" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32898173" />
@@ -1051,6 +850,12 @@
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -1064,233 +869,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Parameter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Executable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="349" column="16" selection-start-line="349" selection-start-column="16" selection-end-line="349" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/registry/TestRegistryAndDiscovery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/service/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/service/HelloServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#286#287#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyChannelProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="37" column="41" lean-forward="true" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/UnprocessedRequests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/codec/NettyMessageDecoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/codec/NettyMessageEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="52" column="19" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Proxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="702" column="25" selection-start-line="702" selection-start-column="25" selection-end-line="702" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="843" column="22" selection-start-line="843" selection-start-column="22" selection-end-line="843" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/lombok/SneakyThrows.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/dto/RpcResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="13" column="24" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/config/ServiceConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#437#438#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/utils/NacosUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/AbstractServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="39" column="56" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/zk/ZkServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/nacos/NacosServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestRpcDynamicProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="58" column="53" selection-start-line="58" selection-start-column="53" selection-end-line="58" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#850#851#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103">
-          <caret line="69" column="27" selection-start-line="69" selection-start-column="12" selection-end-line="69" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-collections4/4.0/commons-collections4-4.0.jar!/org/apache/commons/collections4/CollectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="686" column="26" selection-start-line="686" selection-start-column="26" selection-end-line="686" selection-end-column="26" />
-          <folding>
-            <element signature="e#23185#23186#0" expanded="true" />
-            <element signature="e#23238#23239#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="62" selection-start-line="62" selection-end-line="70" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/loadbalance/loadbalancer/RoundRobinLoadBalancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/loadbalance/loadbalancer/RandomLoadBalancer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1403,41 +981,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="113" selection-start-line="37" selection-start-column="113" selection-end-line="37" selection-end-column="113" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="25" column="116" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="116" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="48" column="13" lean-forward="true" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="31" column="113" selection-start-line="31" selection-start-column="113" selection-end-line="31" selection-end-column="113" />
         </state>
       </provider>
     </entry>
@@ -1455,5 +1002,343 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ConfigEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="13" column="12" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/serialize/json/JsonSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="31" column="113" selection-start-line="31" selection-start-column="113" selection-end-line="31" selection-end-column="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="116" selection-start-line="25" selection-start-column="100" selection-end-line="25" selection-end-column="116" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-api/src/main/java/github/yuanlin/HiService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="43" selection-start-line="43" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" selection-start-line="14" selection-end-line="25" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestRpcDynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="24" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="44" column="52" lean-forward="true" selection-start-line="44" selection-start-column="52" selection-end-line="44" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.jar!/org/springframework/stereotype/Component.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/annotation/RpcService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-server/src/main/java/github/yuanlin/service/HiServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#218#219#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="33" column="29" lean-forward="true" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-220">
+          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+          <folding>
+            <element signature="e#4396#4397#0" expanded="true" />
+            <element signature="e#4458#4459#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-server/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="8" lean-forward="true" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/resources/spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/annotation/RpcAutowire.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="23" column="38" lean-forward="true" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#775#776#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-server/src/main/java/github/yuanlin/DemoServerMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="29" lean-forward="true" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-server/src/main/java/github/yuanlin/DemoServerMain02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/Demo02Invocation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="19" column="5" lean-forward="true" selection-start-line="14" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="17" column="43" lean-forward="true" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/DemoClientMain02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="52" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#751#752#0" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/exception/RpcException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo-client/src/main/java/github/yuanlin/DemoClientMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="22" column="48" lean-forward="true" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyChannelProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="63" column="77" selection-start-line="63" selection-start-column="77" selection-end-line="63" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>demo-api</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.27393228" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

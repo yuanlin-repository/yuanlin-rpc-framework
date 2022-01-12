@@ -8,6 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 import java.io.IOException;
 
 /**
+ * 待完善
  * json 序列化实现
  *
  * @author yuanlin

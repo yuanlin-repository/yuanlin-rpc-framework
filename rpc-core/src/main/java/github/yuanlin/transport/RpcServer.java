@@ -1,5 +1,7 @@
 package github.yuanlin.transport;
 
+import github.yuanlin.config.ServiceConfig;
+
 /**
  * RPC 服务器接口
  *
@@ -15,9 +17,8 @@ public interface RpcServer {
 
     /**
      * 发布服务
-     * @param serviceName 服务名称
-     * @param serviceBean 处理请求的实例 bean
-     * @param <T> 实例类型
+     * @param config 服务配置（serviceName, bean）
+     * @param <T>
      */
-    <T> void publishService(String serviceName, T serviceBean);
+    <T> void publishService(ServiceConfig config);
 }

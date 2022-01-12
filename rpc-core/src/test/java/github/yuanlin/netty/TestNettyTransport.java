@@ -47,7 +47,7 @@ public class TestNettyTransport {
                 .group("test")
                 .version("01")
                 .build();
-        server.publishService(config.getServiceName(), config.getService());
+        server.publishService(config);
         // 3. 启动服务端
         server.start();
     }

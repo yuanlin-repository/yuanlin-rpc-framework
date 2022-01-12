@@ -30,6 +30,8 @@ import java.util.concurrent.TimeUnit;
 @Component
 public class NettyServer extends AbstractServer implements BeanPostProcessor {
 
+    public NettyServer(){}
+
     public NettyServer(String host, int port) {
         super();
         this.host = host;
@@ -84,7 +86,7 @@ public class NettyServer extends AbstractServer implements BeanPostProcessor {
     private void registerService() {
         if (CollectionUtils.isNotEmpty(serviceConfigs)) {
             for (ServiceConfig serviceConfig : serviceConfigs) {
-                publishService(serviceConfig.getServiceName(), serviceConfig.getService());
+                publishService(serviceConfig);
             }
         } else {
             log.warn("@RpcService set is empty");
@@ -110,7 +112,7 @@ public class NettyServer extends AbstractServer implements BeanPostProcessor {
     }
 
     @Override
-    public <T> void publishService(String serviceName, T serviceBean) {
-        super.publishService(serviceName, serviceBean);
+    public <T> void publishService(ServiceConfig config) {
+        super.publishService(config);
     }
 }
