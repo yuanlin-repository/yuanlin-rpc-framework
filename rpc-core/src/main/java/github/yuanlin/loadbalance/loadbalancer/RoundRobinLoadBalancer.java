@@ -1,9 +1,11 @@
 package github.yuanlin.loadbalance.loadbalancer;
 
+import github.yuanlin.loadbalance.AbstractLoadBalancer;
 import github.yuanlin.loadbalance.LoadBalancer;
 import github.yuanlin.transport.dto.RpcRequest;
 
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * RoundRobin (轮询)负载均衡
@@ -11,9 +13,23 @@ import java.util.List;
  * @author yuanlin
  * @date 2021/12/28/12:18
  */
-public class RoundRobinLoadBalancer implements LoadBalancer {
+public class RoundRobinLoadBalancer extends AbstractLoadBalancer {
+
+    private final AtomicInteger nextServerCyclicCounter = new AtomicInteger(-1);
+
     @Override
-    public String selectServiceAddress(List<String> serviceAddresses, RpcRequest rpcRequest) {
-        return null;
+    protected String select(List<String> serviceAddresses) {
+        int nextIdx = incrementAndGetIdx(serviceAddresses.size());
+        return serviceAddresses.get(nextIdx);
+    }
+
+    private int incrementAndGetIdx(int size) {
+        for (; ; ) {
+            int current = nextServerCyclicCounter.get();
+            int next = (current + 1) % size;
+            if (nextServerCyclicCounter.compareAndSet(current, next))
+                return next;
+        }
+
     }
 }
