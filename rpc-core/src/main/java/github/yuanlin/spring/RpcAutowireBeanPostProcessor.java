@@ -40,7 +40,7 @@ public class RpcAutowireBeanPostProcessor implements BeanPostProcessor {
                         .version(rpcAutowire.version())
                         .build();
                 RpcDynamicProxy proxy = new RpcDynamicProxy(rpcClient, serviceConfig);
-                Object proxyObj = proxy.getProxy(interfaceClass, rpcAutowire);
+                Object proxyObj = proxy.getProxy(interfaceClass);
                 field.setAccessible(true);
                 try {
                     field.set(bean, proxyObj);

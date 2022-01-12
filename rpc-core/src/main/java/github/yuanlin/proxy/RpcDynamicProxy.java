@@ -36,8 +36,8 @@ public class RpcDynamicProxy implements InvocationHandler {
         this.config = config;
     }
 
-    public <T> Object getProxy(Class<T> interfaceClass, RpcAutowire rpcAutowire) {
-        return (T) Proxy.newProxyInstance(interfaceClass.getClassLoader(), interfaceClass.getInterfaces(), this);
+    public <T> T getProxy(Class<T> interfaceClass) {
+        return (T) Proxy.newProxyInstance(interfaceClass.getClassLoader(), new Class<?>[]{interfaceClass}, this);
     }
 
     @Override
@@ -57,12 +57,15 @@ public class RpcDynamicProxy implements InvocationHandler {
     }
 
     private void checkForResponse(RpcRequest rpcRequest, RpcResponse<Object> rpcResponse) {
+        // 远程调用失败
         if (rpcResponse == null) {
             throw new RpcException(ErrorEnum.RPC_INVOCATION_FAILURE, String.format("service interface: [%s]", rpcRequest.getInterfaceName()));
         }
+        // 请求和响应的ID不一致
         if (!(rpcRequest.getRequestId().equals(rpcResponse.getRequestId()))) {
             throw new RpcException(ErrorEnum.REQUEST_NOT_MATCH_RESPONSE, String.format("service interface: [%s]", rpcRequest.getInterfaceName()));
         }
+        // 远程调用失败
         if (rpcResponse.getStatusCode() == null || !rpcResponse.getStatusCode().equals(ResponseCodeEnum.SUCCESS.getCode())) {
             throw new RpcException(ErrorEnum.RPC_INVOCATION_FAILURE, String.format("service interface: [%s]", rpcRequest.getInterfaceName()));
         }

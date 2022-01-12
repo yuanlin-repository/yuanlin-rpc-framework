@@ -31,7 +31,7 @@ import java.util.concurrent.ExecutionException;
  * @author yuanlin
  * @date 2022/01/08/14:16
  */
-public class TestNettyServerAndClient {
+public class TestNettyTransport {
 
     /**
      * receive msg: [RpcMessage(requestId=0, messageType=1, codec=4, payload=RpcRequest(requestId=123456, interfaceName=github.yuanlin.netty.service.HelloService, methodName=hello, parameterTypes=[class java.lang.String], parameters=[hello], version=01, group=test))]
@@ -69,8 +69,7 @@ public class TestNettyServerAndClient {
                 .group("test")
                 .version("01")
                 .build();
-        CompletableFuture<RpcResponse<Object>> future = client.sendRequest(rpcRequest);
         // 3. 阻塞等待服务端响应
-        RpcResponse<Object> response = future.get();
+        RpcResponse<Object> rpcResponse = client.sendRequest(rpcRequest);
     }
 }

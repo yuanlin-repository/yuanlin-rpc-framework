@@ -29,7 +29,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter {
     private ServiceProvider serviceProvider;
 
     public NettyServerHandler() {
-        serviceProvider = ExtensionLoader.getExtensionLoader(ServiceProvider.class).getExtension("nacos");
+        serviceProvider = ExtensionLoader.getExtensionLoader(ServiceProvider.class).getExtension("zk");
     }
 
     @Override

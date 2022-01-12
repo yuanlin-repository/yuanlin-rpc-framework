@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b22d0857-f75c-4fc5-8502-51a478819e6f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/config/ServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/config/ServiceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyServerAndClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/rpc-core/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,33 +30,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/lombok/SneakyThrows.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
+            <state relative-caret-position="517">
               <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="533">
+              <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -60,8 +62,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
+            <state relative-caret-position="265">
+              <caret line="39" column="104" selection-start-line="39" selection-start-column="104" selection-end-line="39" selection-end-column="104" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestRpcDynamicProxy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="493">
+              <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,55 +81,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcClient.java">
+        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/config/ServiceConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="e#378#379#0" expanded="true" />
-                <element signature="e#466#467#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Class.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="843" column="22" selection-start-line="843" selection-start-column="22" selection-end-line="843" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/reflect/Proxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="702" column="25" selection-start-line="702" selection-start-column="25" selection-end-line="702" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="673">
-              <caret line="98" column="83" selection-start-line="98" selection-start-column="83" selection-end-line="98" selection-end-column="83" />
+            <state relative-caret-position="480">
+              <caret line="37" column="100" selection-start-line="37" selection-start-column="100" selection-end-line="37" selection-end-column="100" />
             </state>
           </provider>
         </entry>
@@ -126,11 +92,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+            <state relative-caret-position="500">
+              <caret line="25" column="102" selection-start-line="25" selection-start-column="102" selection-end-line="25" selection-end-column="102" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/AbstractServiceProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="39" column="56" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/zk/ZkServiceProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/nacos/NacosServiceProvider.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
             </state>
           </provider>
         </entry>
@@ -169,8 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/registry/Student.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/registry/TestSerialization.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/serialize/TestSerialization.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstactRpcServer.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/config/RpcServiceConfig.java" />
@@ -202,23 +193,25 @@
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/zk/ZkServiceProvider.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/nacos/NacosServiceProvider.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/ServiceProvider.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/resources/META-INF/extensions/github.yuanlin.provider.ServiceProvider" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/utils/NacosUtils.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/nacos/NacosServiceRegistry.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyServerAndClient.java" />
-        <option value="$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/HelloService.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/HelloServiceImpl.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/Student.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClientHandler.java" />
-        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/config/ServiceConfig.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcClient.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java" />
+        <option value="$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestRpcDynamicProxy.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java" />
+        <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java" />
         <option value="$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java" />
       </list>
     </option>
@@ -259,7 +252,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -714,53 +707,11 @@
               <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
               <item name="netty" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="netty" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="registry" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yuanlin-rpc-framework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yuanlin-rpc-framework" type="462c0819:PsiDirectoryNode" />
-              <item name="rpc-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="yuanlin" type="462c0819:PsiDirectoryNode" />
-              <item name="serialize" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -789,71 +740,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestCallService.testCallService_Client1">
-    <configuration name="TestCallService.testCallService_Client1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rpc-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.yuanlin.netty.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github.yuanlin.netty" />
-      <option name="MAIN_CLASS_NAME" value="github.yuanlin.netty.TestCallService" />
-      <option name="METHOD_NAME" value="testCallService_Client1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCallService.testCallService_Client2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rpc-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.yuanlin.netty.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github.yuanlin.netty" />
-      <option name="MAIN_CLASS_NAME" value="github.yuanlin.netty.TestCallService" />
-      <option name="METHOD_NAME" value="testCallService_Client2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCallService.testCallService_Client3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rpc-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.yuanlin.netty.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github.yuanlin.netty" />
-      <option name="MAIN_CLASS_NAME" value="github.yuanlin.netty.TestCallService" />
-      <option name="METHOD_NAME" value="testCallService_Client3" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestCallService.testCallService_Server1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rpc-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="github.yuanlin.netty.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="github.yuanlin.netty" />
-      <option name="MAIN_CLASS_NAME" value="github.yuanlin.netty.TestCallService" />
-      <option name="METHOD_NAME" value="testCallService_Server1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestRpcDynamicProxy.testRpcDynamicProxy_client">
     <configuration name="TestCallService.testCallService_Server3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpc-core" />
       <extension name="coverage">
@@ -870,13 +757,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestNettyTransport.testNettyClient" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpc-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.yuanlin.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="github.yuanlin.netty" />
+      <option name="MAIN_CLASS_NAME" value="github.yuanlin.netty.TestNettyTransport" />
+      <option name="METHOD_NAME" value="testNettyClient" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNettyTransport.testNettyServer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpc-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.yuanlin.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="github.yuanlin.netty" />
+      <option name="MAIN_CLASS_NAME" value="github.yuanlin.netty.TestNettyTransport" />
+      <option name="METHOD_NAME" value="testNettyServer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRpcDynamicProxy.testRpcDynamicProxy_client" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpc-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.yuanlin.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="github.yuanlin.netty" />
+      <option name="MAIN_CLASS_NAME" value="github.yuanlin.netty.TestRpcDynamicProxy" />
+      <option name="METHOD_NAME" value="testRpcDynamicProxy_client" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRpcDynamicProxy.testRpcDynamicProxy_server" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rpc-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="github.yuanlin.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="github.yuanlin.netty" />
+      <option name="MAIN_CLASS_NAME" value="github.yuanlin.netty.TestRpcDynamicProxy" />
+      <option name="METHOD_NAME" value="testRpcDynamicProxy_server" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestRpcDynamicProxy.testRpcDynamicProxy_client" />
+        <item itemvalue="JUnit.TestRpcDynamicProxy.testRpcDynamicProxy_server" />
+        <item itemvalue="JUnit.TestNettyTransport.testNettyClient" />
+        <item itemvalue="JUnit.TestNettyTransport.testNettyServer" />
         <item itemvalue="JUnit.TestCallService.testCallService_Server3" />
-        <item itemvalue="JUnit.TestCallService.testCallService_Server1" />
-        <item itemvalue="JUnit.TestCallService.testCallService_Client3" />
-        <item itemvalue="JUnit.TestCallService.testCallService_Client2" />
-        <item itemvalue="JUnit.TestCallService.testCallService_Client1" />
       </list>
     </recent_temporary>
   </component>
@@ -896,22 +847,11 @@
       <workItem from="1641650787215" duration="1123000" />
       <workItem from="1641652032686" duration="497000" />
       <workItem from="1641728116853" duration="7035000" />
+      <workItem from="1641959603809" duration="1639000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestCallService_testCallService_Client2 - 2022.01.09 at 20h 43m 34s.xml">
-      <configuration name="TestCallService.testCallService_Client2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCallService_testCallService_Client2 - 2022.01.09 at 20h 43m 40s.xml">
-      <configuration name="TestCallService.testCallService_Client2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCallService_testCallService_Server2 - 2022.01.09 at 20h 50m 14s.xml">
-      <configuration name="TestCallService.testCallService_Server2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestCallService_testCallService_Client2 - 2022.01.09 at 20h 50m 14s.xml">
-      <configuration name="TestCallService.testCallService_Client2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestCallService_testCallService_Client3 - 2022.01.09 at 20h 50m 38s.xml">
       <configuration name="TestCallService.testCallService_Client3" configurationId="JUnit" />
     </history-entry>
@@ -930,9 +870,21 @@
     <history-entry file="TestCallService_testCallService_Client1 - 2022.01.09 at 20h 58m 32s.xml">
       <configuration name="TestCallService.testCallService_Client1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestRpcDynamicProxy_testRpcDynamicProxy_server - 2022.01.12 at 12h 14m 01s.xml">
+      <configuration name="TestRpcDynamicProxy.testRpcDynamicProxy_server" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestRpcDynamicProxy_testRpcDynamicProxy_server - 2022.01.12 at 12h 15m 07s.xml">
+      <configuration name="TestRpcDynamicProxy.testRpcDynamicProxy_server" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNettyTransport_testNettyClient - 2022.01.12 at 12h 18m 25s.xml">
+      <configuration name="TestNettyTransport.testNettyClient" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestNettyTransport_testNettyServer - 2022.01.12 at 12h 18m 25s.xml">
+      <configuration name="TestNettyTransport.testNettyServer" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74378000" />
+    <option name="totallyTimeSpent" value="76366000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -947,7 +899,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49805447" visible="true" weight="0.23427041" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49805447" visible="true" weight="0.21820615" />
       <window_info id="Structure" order="1" sideWeight="0.5019455" side_tool="true" weight="0.26572958" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -967,7 +919,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32898173" />
       <window_info anchor="bottom" id="CheckStyle" order="12" weight="0.32898173" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.32770744" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.32767624" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.40469974" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1052,7 +1004,7 @@
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyServerAndClient.java</url>
+          <url>file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java</url>
           <line>43</line>
           <properties />
           <option name="timeStamp" value="8" />
@@ -1070,13 +1022,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/loadbalance/LoadBalancer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -1145,17 +1090,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/zk/ZkServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/nacos/nacos-client/1.3.0/nacos-client-1.3.0.jar!/com/alibaba/nacos/client/naming/NacosNamingService.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -1191,20 +1125,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/utils/NacosUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1000">
-          <caret line="62" column="32" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/nacos/NacosServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/zk/ZkServiceRegistry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1236,37 +1156,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/AbstractServiceProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="37" column="24" selection-start-line="37" selection-start-column="24" selection-end-line="37" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/dto/RpcResponse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="29" column="37" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="76" column="44" selection-start-line="76" selection-start-column="44" selection-end-line="76" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -1336,13 +1225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyServerAndClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6">
-          <caret line="45" column="38" selection-start-line="45" selection-start-column="38" selection-end-line="45" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyChannelProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="740">
@@ -1350,13 +1232,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1180">
-          <caret line="71" column="52" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -1384,13 +1259,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="103" selection-start-line="37" selection-start-column="103" selection-end-line="37" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClientHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="223">
@@ -1412,10 +1280,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/lombok/SneakyThrows.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="673">
-          <caret line="98" column="83" selection-start-line="98" selection-start-column="83" selection-end-line="98" selection-end-column="83" />
+        <state relative-caret-position="160">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-common/src/main/java/github/yuanlin/enums/ErrorEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="25" column="39" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/dto/RpcResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1425,66 +1320,115 @@
           <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding>
             <element signature="e#378#379#0" expanded="true" />
-            <element signature="e#466#467#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/RpcClient.java">
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.8/lombok-1.18.8.jar!/lombok/SneakyThrows.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        <state relative-caret-position="1540">
+          <caret line="98" column="83" selection-start-line="98" selection-start-column="83" selection-end-line="98" selection-end-column="83" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/client/NettyClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
-          <caret line="68" column="10" lean-forward="true" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        <state relative-caret-position="673">
+          <caret line="68" column="10" selection-start-line="68" selection-start-column="10" selection-end-line="68" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestCallService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="114" selection-start-line="114" selection-end-line="115" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/registry/utils/NacosUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="62" column="22" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="37" column="100" selection-start-line="37" selection-start-column="100" selection-end-line="37" selection-end-column="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/AbstractClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="25" column="102" selection-start-line="25" selection-start-column="102" selection-end-line="25" selection-end-column="102" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/AbstractServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="39" column="56" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/zk/ZkServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/provider/nacos/NacosServiceProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="28" column="63" selection-start-line="28" selection-start-column="63" selection-end-line="28" selection-end-column="63" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/spring/RpcAutowireBeanPostProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
+        <state relative-caret-position="517">
           <caret line="43" column="42" lean-forward="true" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestNettyTransport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="533">
+          <caret line="63" column="36" lean-forward="true" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/transport/netty/server/NettyServerHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rpc-core/src/test/java/github/yuanlin/netty/TestRpcDynamicProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="46" column="48" lean-forward="true" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rpc-core/src/main/java/github/yuanlin/proxy/RpcDynamicProxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="60" column="8" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="265">
+          <caret line="39" column="104" selection-start-line="39" selection-start-column="104" selection-end-line="39" selection-end-column="104" />
         </state>
       </provider>
     </entry>

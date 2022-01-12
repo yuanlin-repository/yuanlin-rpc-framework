@@ -67,9 +67,8 @@ public class TestCallService {
                 .group("test")
                 .version("01")
                 .build();
-        CompletableFuture<RpcResponse<Object>> future = client.sendRequest(rpcRequest);
         // 3. 阻塞等待服务端响应
-        RpcResponse<Object> response = future.get();
+        RpcResponse<Object> rpcResponse = client.sendRequest(rpcRequest);
     }
 
     /*------------ 测试样例2: 方法无参 ------------------*/
@@ -113,9 +112,8 @@ public class TestCallService {
                 .group("test")
                 .version("01")
                 .build();
-        CompletableFuture<RpcResponse<Object>> future = client.sendRequest(rpcRequest);
         // 3. 阻塞等待服务端响应
-        RpcResponse<Object> response = future.get();
+        RpcResponse<Object> rpcResponse = client.sendRequest(rpcRequest);
     }
 
     /*------------ 测试样例3: 方法有多个参数 ------------------*/
@@ -159,8 +157,7 @@ public class TestCallService {
                 .group("test")
                 .version("01")
                 .build();
-        CompletableFuture<RpcResponse<Object>> future = client.sendRequest(rpcRequest);
         // 3. 阻塞等待服务端响应
-        RpcResponse<Object> response = future.get();
+        RpcResponse<Object> rpcResponse = client.sendRequest(rpcRequest);
     }
 }
