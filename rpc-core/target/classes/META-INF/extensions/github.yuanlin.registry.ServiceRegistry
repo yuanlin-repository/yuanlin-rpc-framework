@@ -1,2 +1,0 @@
-zk=github.yuanlin.registry.zk.ZkServiceRegistry
-nacos=github.yuanlin.registry.nacos.NacosServiceRegistry

@@ -1,1 +1,0 @@
-loadbalancer=github.yuanlin.loadbalance.loadbalancer.RoundRobinLoadBalancer
