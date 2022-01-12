@@ -1,3 +1,0 @@
-kryo=github.yuanlin.serialize.kryo.KryoSerializer
-protostuff=github.yuanlin.serialize.protostuff.ProtostuffSerializer
-hessian=github.yuanlin.serialize.hessian.HessianSerializer
