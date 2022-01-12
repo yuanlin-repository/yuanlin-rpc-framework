@@ -3,6 +3,7 @@ package github.yuanlin.provider.zk;
 import github.yuanlin.provider.AbstractServiceProvider;
 import github.yuanlin.provider.ServiceProvider;
 import github.yuanlin.registry.ServiceRegistry;
+import github.yuanlin.registry.utils.CuratorUtils;
 import github.yuanlin.registry.zk.ZkServiceRegistry;
 
 import java.net.InetSocketAddress;
@@ -28,5 +29,10 @@ public class ZkServiceProvider extends AbstractServiceProvider {
     @Override
     public <T> void addService(String serviceName, T service, InetSocketAddress serviceAddress) {
         super.addService(serviceName, service, serviceAddress);
+    }
+
+    @Override
+    public void clearService(InetSocketAddress serviceAddress) {
+        CuratorUtils.clearRegistry(CuratorUtils.getZkClient(), serviceAddress);
     }
 }

@@ -28,4 +28,9 @@ public class NacosServiceProvider extends AbstractServiceProvider {
     public <T> void addService(String serviceName, T service, InetSocketAddress serviceAddress) {
         super.addService(serviceName, service, serviceAddress);
     }
+
+    @Override
+    public void clearService(InetSocketAddress serviceAddress) {
+
+    }
 }

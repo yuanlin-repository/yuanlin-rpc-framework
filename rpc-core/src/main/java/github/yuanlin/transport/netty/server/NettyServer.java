@@ -5,6 +5,7 @@ import github.yuanlin.config.ServiceConfig;
 import github.yuanlin.transport.AbstractServer;
 import github.yuanlin.transport.netty.codec.NettyMessageDecoder;
 import github.yuanlin.transport.netty.codec.NettyMessageEncoder;
+import github.yuanlin.transport.netty.server.hook.ServerShutdownHook;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -18,6 +19,8 @@ import org.apache.commons.collections4.CollectionUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
+
+import java.net.InetSocketAddress;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -41,6 +44,7 @@ public class NettyServer extends AbstractServer implements BeanPostProcessor {
     @Override
     public void start() {
         // 启动 Netty 服务器
+        ServerShutdownHook.getServerShutdownHook().clearAllOnClose(new InetSocketAddress(host, port));
         EventLoopGroup bossGroup = new NioEventLoopGroup(1);
         EventLoopGroup workerGroup = new NioEventLoopGroup();
         try {

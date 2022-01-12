@@ -28,4 +28,10 @@ public interface ServiceProvider {
      * @return 服务实例
      */
     Object getService(String serviceName);
+
+    /**
+     * 清理注册服务
+     * @param serviceAddress 本机服务器地址
+     */
+    void clearService(InetSocketAddress serviceAddress);
 }
