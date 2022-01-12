@@ -26,7 +26,7 @@ public class NacosServiceDiscovery implements ServiceDiscovery {
     private final LoadBalancer loadBalancer;
 
     public NacosServiceDiscovery() {
-        this.loadBalancer = ExtensionLoader.getExtensionLoader(LoadBalancer.class).getExtension("loadbalance");
+        this.loadBalancer = ExtensionLoader.getExtensionLoader(LoadBalancer.class).getExtension("loadbalancer");
     }
 
     @Override

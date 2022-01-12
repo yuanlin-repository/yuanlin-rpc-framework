@@ -1,2 +1,3 @@
+serviceDiscovery=github.yuanlin.registry.zk.ZkServiceDiscovery
 zk=github.yuanlin.registry.zk.ZkServiceDiscovery
 nacos=github.yuanlin.registry.nacos.NacosServiceDiscovery

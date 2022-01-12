@@ -35,7 +35,7 @@ public abstract class AbstractServer implements RpcServer {
         if (StringUtils.isEmpty(host)) {
             throw new IllegalArgumentException("host can't be null");
         }
-        serviceProvider = ExtensionLoader.getExtensionLoader(ServiceProvider.class).getExtension("zk");
+        serviceProvider = ExtensionLoader.getExtensionLoader(ServiceProvider.class).getExtension("serviceProvider");
     }
 
     @Override

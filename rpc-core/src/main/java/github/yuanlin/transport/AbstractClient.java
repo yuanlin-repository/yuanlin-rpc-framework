@@ -23,6 +23,6 @@ public abstract class AbstractClient implements RpcClient {
     protected final ServiceDiscovery serviceDiscovery;
 
     public AbstractClient() {
-        serviceDiscovery = ExtensionLoader.getExtensionLoader(ServiceDiscovery.class).getExtension("zk");
+        serviceDiscovery = ExtensionLoader.getExtensionLoader(ServiceDiscovery.class).getExtension("serviceDiscovery");
     }
 }
