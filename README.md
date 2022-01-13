@@ -34,14 +34,198 @@ yuanlin-rpc-framework 是一款基于 Netty 实现的 RPC 框架，框架主要�
 使用 Netty 进行传输时使用了如下传输协议：
 ![未命名文件](https://user-images.githubusercontent.com/52808768/149275549-8b4d43ed-9d27-48fc-b3d6-a8ee90c61d67.png)
 字段解释：
-- 魔数: 标识协议包，类似与 Java 字节码文件开头的四个字节 0xcafebabe
-- 整体长度: 整个协议包的长度
-- 头长度: 协议包头部长度
-- 协议版本: 当前协议的版本
-- 消息类型: 当前协议包是一个请求、响应还是心跳包
-- 序列化方式: payload 采用的序列化方式
-- 请求id: 当前协议包的id
-- 协议头扩展字段: 如果协议版本升级，可能会新增字段，这些字段就在此处
-- payload: 协议包数据主体
 
-## 使用
+| 名称  | 长度 (byte)   | 描述  |
+| ------------ | ------------ | ------------ |
+| 魔数            | 4       |  标识协议包，类似与 Java 字节码文件开头的四个字节 0xcafebabe |
+| 整体长度        |  4      | 整个协议包的长度  |
+| 头长度          |  2      | 协议包头部长度  |
+| 协议版本        |  1      |  当前协议的版本 |
+| 消息类型        |  1      | 当前协议包是一个请求、响应还是心跳包  |
+| 序列化方式      |  1      | 序列化 payload 采用的方式  |
+| 请求id          | 4       | 当前协议包的id  |
+| 协议头扩展字段  |  不确定  | 如果协议版本升级，可能会新增字段，这些字段就在此处  |
+| payload         |  不确定 | 协议包数据主体  |
+
+## 使用说明
+当前版本: v1.0
+### 定义 RPC 接口
+
+> 参见 demo-api 模块
+
+```java
+package github.yuanlin;
+
+public interface HiService {
+
+    /**
+     * hi方法
+     * @return hi msg
+     */
+    String hi(String msg);
+}
+```
+
+需要将 RPC 接口与 RPC 实现分别存放在不同的模块中
+
+### 发布 RPC 服务
+
+> 参见 demo-server 模块
+
+#### 第一步：添加 Maven 依赖
+
+```xml
+<!-- rpc-core -->
+<dependency>
+    <groupId>github.yuanlin</groupId>
+    <artifactId>rpc-core</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+<!-- demo-api -->
+<dependency>
+    <groupId>github.yuanlin</groupId>
+    <artifactId>demo-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+<!-- spring -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>${version.spring}</version>
+</dependency>
+```
+- demo-api: RPC 接口所在模块的依赖
+- rpc-core: RPC 核心模块的依赖
+
+#### 第二步: 实现服务接口
+```java
+package github.yuanlin.service;
+
+import github.yuanlin.HiService;
+import github.yuanlin.annotation.RpcService;
+
+@RpcService(group = "test", version = "01")
+public class HiServiceImpl implements HiService {
+
+    @Override
+    public String hi(String msg) {
+        return "hi " + msg;
+    }
+}
+```
+如果服务接口有多个实现类，可以通过 group 和 version 加以区分。
+
+#### 第三步: 配置 RPC 服务端
+
+##### spring.xml
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="github.yuanlin"/>
+
+</beans>
+```
+spring 开启注解扫描。
+
+#### 第四步: 启动 RPC 服务
+```java
+package github.yuanlin;
+
+import github.yuanlin.transport.netty.server.NettyServer;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class DemoServerMain02 {
+
+    public static void main(String[] args) {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
+        NettyServer server = applicationContext.getBean(NettyServer.class);
+        server.start();
+    }
+}
+```
+
+运行 DemoServerMain02 类，将对外发布服务，同时进行服务注册。
+
+### 调用 RPC 服务
+
+> 参见 demo-client 模块
+
+#### 第一步: 添加 Maven 依赖
+```xml
+<!-- rpc-core -->
+<dependency>
+    <groupId>github.yuanlin</groupId>
+    <artifactId>rpc-core</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+<!-- demo-api -->
+<dependency>
+    <groupId>github.yuanlin</groupId>
+    <artifactId>demo-api</artifactId>
+    <version>1.0-SNAPSHOT</version>
+</dependency>
+<!-- spring -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>${version.spring}</version>
+</dependency>
+```
+
+#### 第二步: 配置 RPC 客户端
+##### spring.xml
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="github.yuanlin"/>
+
+</beans>
+```
+
+#### 第三步: 调用 RPC 服务
+```java
+package github.yuanlin;
+
+import github.yuanlin.annotation.RpcAutowire;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
+
+public class DemoClientMain02 {
+
+    public static void main(String[] args) {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring.xml");
+        Test test = applicationContext.getBean(Test.class);
+        test.test();
+    }
+}
+
+@Component
+class Test {
+
+    @RpcAutowire(group = "test", version = "01")
+    private HiService hiService;
+
+    public String test() {
+        return hiService.hi("帅哥~");
+    }
+}
+```
+1. 通过 @RpcAutowire 注入代理对象
+2. 调用 RPC 代理接口的方法，就像调用远程接口方法一样
