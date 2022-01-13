@@ -18,6 +18,8 @@ yuanlin-rpc-framework 是一款基于 Netty 实现的 RPC 框架，框架主要�
 
 服务发布模块（Server 端）
 - 通过 Spring + 注解的方式实现服务自动注册
+- 优雅启动，当 spring 容器初始化完成之后再向注册中心发布服务（延迟发布）
+- 优雅关闭，当服务器关闭时清理注册的服务
 
 服务调用模块（Client 端）
 - 通过 Spring + 注解的方式实现服务消费
@@ -235,3 +237,25 @@ class Test {
 在运行前请先确保注册中心在本地启动。默认注册中心使用 ZooKeeper，启动端口 2181。
 
 如果使用 Nacos，请更改 rpc-core 模块中 resources/META-INF.extensions 中 github.yuanlin.provider.ServiceProvider, github.yuanlin.registry.ServiceDiscovery 文件中的实现类。
+
+# 值得一提
+
+自己能够较完整地实现这个 RPC 框架，得益于多位前辈的 RPC 框架实现，在此特地感谢他们
+- guide哥: https://github.com/Snailclimb/guide-rpc-framework
+- CN-GuoZiyang: https://github.com/CN-GuoZiyang/My-RPC-Framework
+- huangyong: https://gitee.com/huangyong/rpc?_from=gitee_search
+
+同时极客时间的专栏也有很大帮助
+RPC 实战与核心原理: https://time.geekbang.org/column/intro/100046201?tab=catalog
+
+# 不足之处
+
+- 无服务监控中心实现
+- 对注册中心，客户端请求的序列化方式等的配置不够灵活，后续尝试通过读取配置文件来进行配置
+- 网络传输只提供了 Netty 实现，可以尝试通过其他高性能网络通信框架来实现传输
+- 缺少健康检测功能，服务端挂了不需要再继续发送请求
+- 缺少异常重试功能，服务调用失败后可以尝试重新调用
+- 优雅关闭优化，在关闭阶段通过增加挡板来拒绝请求并抛出特定异常，限制关闭时间
+- 尝试提供自适应的负载均衡策略
+
+秉承开源原则，该项目完整代码均能在我的github上面下载得到。能够帮到有需要的朋友那是再好不过。 觉得博主的分享还不错，不妨在github上star一下博主，激励博主更新更多实用的功能。 github: https://github.com/yuanlin-repository/yuanlin-rpc-framework
