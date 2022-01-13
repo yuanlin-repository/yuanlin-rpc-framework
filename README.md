@@ -229,3 +229,9 @@ class Test {
 ```
 1. 通过 @RpcAutowire 注入代理对象
 2. 调用 RPC 代理接口的方法，就像调用远程接口方法一样
+
+### 提示: 启动注册中心
+
+在运行前请先确保注册中心在本地启动。默认注册中心使用 ZooKeeper，启动端口 2181。
+
+如果使用 Nacos，请更改 rpc-core 模块中 resources/META-INF.extensions 中 github.yuanlin.provider.ServiceProvider, github.yuanlin.registry.ServiceDiscovery 文件中的实现类。
